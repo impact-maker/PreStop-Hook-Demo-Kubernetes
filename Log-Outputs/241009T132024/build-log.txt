@@ -1,0 +1,135 @@
+I1009 13:20:30.219420  136619 build.go:59] Building k8s binaries...
+Makefile:195: warning: undefined variable '''
++++ [1009 13:20:30] Building go targets for linux/amd64
+    k8s.io/kubernetes/cmd/kubelet (non-static)
+I1009 13:20:35.261691  136619 build.go:59] Building k8s binaries...
+Makefile:195: warning: undefined variable '''
++++ [1009 13:20:36] Building go targets for linux/amd64
+    github.com/onsi/ginkgo/v2/ginkgo (non-static)
+    k8s.io/kubernetes/cluster/gce/gci/mounter (static)
+    k8s.io/kubernetes/test/e2e_node/e2e_node.test (test)
+    k8s.io/kubernetes/test/e2e_node/plugins/gcp-credential-provider (non-static)
+I1009 13:20:42.082992  136619 run_local.go:60] Got build output dir: /home/ubuntu/kubernetes/_output/local/go/bin
+I1009 13:20:42.083028  136619 run_local.go:121] Running command: /home/ubuntu/kubernetes/_output/local/go/bin/ginkgo -timeout=24h -nodes=8  -focus="PreStop Hook Test Final"  -skip="\[Flaky\]|\[Slow\]|\[Serial\]"  /home/ubuntu/kubernetes/_output/local/go/bin/e2e_node.test -- --v 4 --report-dir=/tmp/_artifacts/241009T132024 --node-name srv579909 --kubelet-flags="--cluster-domain=cluster.local" --dns-domain="cluster.local" --prepull-images=false  --container-runtime-endpoint=unix:///run/containerd/containerd.sock  --runtime-config= --kubelet-config-file="test/e2e_node/jenkins/default-kubelet-config.yaml"
+Running Suite: E2eNode Suite - /home/ubuntu/kubernetes/_output/local/go/bin
+===========================================================================
+Random Seed: [1m1728480042[0m - will randomize all specs
+
+Will run [1m1[0m of [1m663[0m specs
+Running in parallel across [1m8[0m processes
+I1009 13:20:42.471276  137598 factory.go:193] Registered Plugin "containerd"
+  I1009 13:20:42.493075  137598 mount_linux.go:334] Detected umount with safe 'not mounted' behavior
+  I1009 13:20:42.494904  137598 mount_linux.go:334] Detected umount with safe 'not mounted' behavior
+  I1009 13:20:42.496601  137598 mount_linux.go:334] Detected umount with safe 'not mounted' behavior
+  W1009 13:20:42.521393  137598 test_context.go:538] Unable to find in-cluster config, using default host : https://127.0.0.1:6443
+  I1009 13:20:42.521428  137598 test_context.go:553] Tolerating taints "node-role.kubernetes.io/control-plane" when considering if nodes are ready
+  I1009 13:20:42.521434 137598 test_context.go:561] The --provider flag is not set. Continuing as if --provider=skeleton had been used.
+  I1009 13:20:42.521591  137598 feature_gate.go:387] feature gates: {map[]}
+  I1009 13:20:42.521629  137598 feature_gate.go:387] feature gates: {map[]}
+Validating os...
+[0;37mOS[0m: [0;32mLinux[0m
+Validating kernel...
+[0;37mKERNEL_VERSION[0m: [0;32m6.8.0-45-generic[0m
+[0;37mCONFIG_NAMESPACES[0m: [0;32menabled[0m
+[0;37mCONFIG_NET_NS[0m: [0;32menabled[0m
+[0;37mCONFIG_PID_NS[0m: [0;32menabled[0m
+[0;37mCONFIG_IPC_NS[0m: [0;32menabled[0m
+[0;37mCONFIG_UTS_NS[0m: [0;32menabled[0m
+[0;37mCONFIG_CGROUPS[0m: [0;32menabled[0m
+[0;37mCONFIG_CGROUP_CPUACCT[0m: [0;32menabled[0m
+[0;37mCONFIG_CGROUP_DEVICE[0m: [0;32menabled[0m
+[0;37mCONFIG_CGROUP_FREEZER[0m: [0;32menabled[0m
+[0;37mCONFIG_CGROUP_PIDS[0m: [0;32menabled[0m
+[0;37mCONFIG_CGROUP_SCHED[0m: [0;32menabled[0m
+[0;37mCONFIG_CPUSETS[0m: [0;32menabled[0m
+[0;37mCONFIG_MEMCG[0m: [0;32menabled[0m
+[0;37mCONFIG_INET[0m: [0;32menabled[0m
+[0;37mCONFIG_EXT4_FS[0m: [0;32menabled[0m
+[0;37mCONFIG_PROC_FS[0m: [0;32menabled[0m
+[0;37mCONFIG_NETFILTER_XT_TARGET_REDIRECT[0m: [0;32menabled (as module)[0m
+[0;37mCONFIG_NETFILTER_XT_MATCH_COMMENT[0m: [0;32menabled (as module)[0m
+[0;37mCONFIG_FAIR_GROUP_SCHED[0m: [0;32menabled[0m
+[0;37mCONFIG_OVERLAY_FS[0m: [0;32menabled (as module)[0m
+[0;37mCONFIG_AUFS_FS[0m: [0;33mnot set - Required for aufs.[0m
+[0;37mCONFIG_BLK_DEV_DM[0m: [0;32menabled[0m
+[0;37mCONFIG_CFS_BANDWIDTH[0m: [0;32menabled[0m
+[0;37mCONFIG_CGROUP_HUGETLB[0m: [0;32menabled[0m
+[0;37mCONFIG_SECCOMP[0m: [0;32menabled[0m
+[0;37mCONFIG_SECCOMP_FILTER[0m: [0;32menabled[0m
+Validating cgroups...
+[0;37mCGROUPS_CPU[0m: [0;32menabled[0m
+[0;37mCGROUPS_CPUSET[0m: [0;32menabled[0m
+[0;37mCGROUPS_DEVICES[0m: [0;32menabled[0m
+[0;37mCGROUPS_FREEZER[0m: [0;32menabled[0m
+[0;37mCGROUPS_MEMORY[0m: [0;32menabled[0m
+[0;37mCGROUPS_PIDS[0m: [0;32menabled[0m
+[0;37mCGROUPS_HUGETLB[0m: [0;32menabled[0m
+[0;37mCGROUPS_IO[0m: [0;32menabled[0m
+Validating package...
+PASS
+[38;5;243m------------------------------[0m
+[38;5;10m[SynchronizedBeforeSuite] PASSED [3.696 seconds][0m
+[38;5;10m[1m[SynchronizedBeforeSuite] [0m
+[38;5;243mk8s.io/kubernetes/test/e2e_node/e2e_node_suite_test.go:227[0m
+
+  [38;5;243mCaptured StdOut/StdErr Output >>[0m
+  I1009 13:20:42.471276  137598 factory.go:193] Registered Plugin "containerd"
+    I1009 13:20:42.493075  137598 mount_linux.go:334] Detected umount with safe 'not mounted' behavior
+    I1009 13:20:42.494904  137598 mount_linux.go:334] Detected umount with safe 'not mounted' behavior
+    I1009 13:20:42.496601  137598 mount_linux.go:334] Detected umount with safe 'not mounted' behavior
+    W1009 13:20:42.521393  137598 test_context.go:538] Unable to find in-cluster config, using default host : https://127.0.0.1:6443
+    I1009 13:20:42.521428  137598 test_context.go:553] Tolerating taints "node-role.kubernetes.io/control-plane" when considering if nodes are ready
+    I1009 13:20:42.521434 137598 test_context.go:561] The --provider flag is not set. Continuing as if --provider=skeleton had been used.
+    I1009 13:20:42.521591  137598 feature_gate.go:387] feature gates: {map[]}
+    I1009 13:20:42.521629  137598 feature_gate.go:387] feature gates: {map[]}
+  Validating os...
+  [0;37mOS[0m: [0;32mLinux[0m
+  Validating kernel...
+  [0;37mKERNEL_VERSION[0m: [0;32m6.8.0-45-generic[0m
+  [0;37mCONFIG_NAMESPACES[0m: [0;32menabled[0m
+  [0;37mCONFIG_NET_NS[0m: [0;32menabled[0m
+  [0;37mCONFIG_PID_NS[0m: [0;32menabled[0m
+  [0;37mCONFIG_IPC_NS[0m: [0;32menabled[0m
+  [0;37mCONFIG_UTS_NS[0m: [0;32menabled[0m
+  [0;37mCONFIG_CGROUPS[0m: [0;32menabled[0m
+  [0;37mCONFIG_CGROUP_CPUACCT[0m: [0;32menabled[0m
+  [0;37mCONFIG_CGROUP_DEVICE[0m: [0;32menabled[0m
+  [0;37mCONFIG_CGROUP_FREEZER[0m: [0;32menabled[0m
+  [0;37mCONFIG_CGROUP_PIDS[0m: [0;32menabled[0m
+  [0;37mCONFIG_CGROUP_SCHED[0m: [0;32menabled[0m
+  [0;37mCONFIG_CPUSETS[0m: [0;32menabled[0m
+  [0;37mCONFIG_MEMCG[0m: [0;32menabled[0m
+  [0;37mCONFIG_INET[0m: [0;32menabled[0m
+  [0;37mCONFIG_EXT4_FS[0m: [0;32menabled[0m
+  [0;37mCONFIG_PROC_FS[0m: [0;32menabled[0m
+  [0;37mCONFIG_NETFILTER_XT_TARGET_REDIRECT[0m: [0;32menabled (as module)[0m
+  [0;37mCONFIG_NETFILTER_XT_MATCH_COMMENT[0m: [0;32menabled (as module)[0m
+  [0;37mCONFIG_FAIR_GROUP_SCHED[0m: [0;32menabled[0m
+  [0;37mCONFIG_OVERLAY_FS[0m: [0;32menabled (as module)[0m
+  [0;37mCONFIG_AUFS_FS[0m: [0;33mnot set - Required for aufs.[0m
+  [0;37mCONFIG_BLK_DEV_DM[0m: [0;32menabled[0m
+  [0;37mCONFIG_CFS_BANDWIDTH[0m: [0;32menabled[0m
+  [0;37mCONFIG_CGROUP_HUGETLB[0m: [0;32menabled[0m
+  [0;37mCONFIG_SECCOMP[0m: [0;32menabled[0m
+  [0;37mCONFIG_SECCOMP_FILTER[0m: [0;32menabled[0m
+  Validating cgroups...
+  [0;37mCGROUPS_CPU[0m: [0;32menabled[0m
+  [0;37mCGROUPS_CPUSET[0m: [0;32menabled[0m
+  [0;37mCGROUPS_DEVICES[0m: [0;32menabled[0m
+  [0;37mCGROUPS_FREEZER[0m: [0;32menabled[0m
+  [0;37mCGROUPS_MEMORY[0m: [0;32menabled[0m
+  [0;37mCGROUPS_PIDS[0m: [0;32menabled[0m
+  [0;37mCGROUPS_HUGETLB[0m: [0;32menabled[0m
+  [0;37mCGROUPS_IO[0m: [0;32menabled[0m
+  Validating package...
+  PASS
+  [38;5;243m<< Captured StdOut/StdErr Output[0m
+[38;5;243m------------------------------[0m
+[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;10m•[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m[38;5;14mS[0m
+
+[38;5;10m[1mRan 1 of 663 Specs in 114.129 seconds[0m
+[38;5;10m[1mSUCCESS![0m -- [38;5;10m[1m1 Passed[0m | [38;5;9m[1m0 Failed[0m | [38;5;11m[1m0 Pending[0m | [38;5;14m[1m662 Skipped[0m
+
+
+Ginkgo ran 1 suite in 1m54.467512507s
+Test Suite Passed

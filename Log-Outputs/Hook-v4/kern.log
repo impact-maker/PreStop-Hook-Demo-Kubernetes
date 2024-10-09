@@ -1,0 +1,1565 @@
+Oct 08 23:07:17 srv579909 kernel: Linux version 6.8.0-45-generic (buildd@lcy02-amd64-115) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.2.0-23ubuntu4) 13.2.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #45-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug 30 12:02:04 UTC 2024 (Ubuntu 6.8.0-45.45-generic 6.8.12)
+Oct 08 23:07:17 srv579909 kernel: Command line: BOOT_IMAGE=/vmlinuz-6.8.0-45-generic root=UUID=b2679cb7-040c-47fb-9459-f477977bb9de ro console=tty0 console=ttyS0,115200 earlyprintk=ttyS0,115200 consoleblank=0 memhp_default_state=online console=tty1 console=ttyS0
+Oct 08 23:07:17 srv579909 kernel: KERNEL supported cpus:
+Oct 08 23:07:17 srv579909 kernel:   Intel GenuineIntel
+Oct 08 23:07:17 srv579909 kernel:   AMD AuthenticAMD
+Oct 08 23:07:17 srv579909 kernel:   Hygon HygonGenuine
+Oct 08 23:07:17 srv579909 kernel:   Centaur CentaurHauls
+Oct 08 23:07:17 srv579909 kernel:   zhaoxin   Shanghai  
+Oct 08 23:07:17 srv579909 kernel: BIOS-provided physical RAM map:
+Oct 08 23:07:17 srv579909 kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+Oct 08 23:07:17 srv579909 kernel: BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+Oct 08 23:07:17 srv579909 kernel: BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+Oct 08 23:07:17 srv579909 kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000bffd9fff] usable
+Oct 08 23:07:17 srv579909 kernel: BIOS-e820: [mem 0x00000000bffda000-0x00000000bfffffff] reserved
+Oct 08 23:07:17 srv579909 kernel: BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff] reserved
+Oct 08 23:07:17 srv579909 kernel: BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+Oct 08 23:07:17 srv579909 kernel: BIOS-e820: [mem 0x0000000100000000-0x000000043fffffff] usable
+Oct 08 23:07:17 srv579909 kernel: BIOS-e820: [mem 0x000000fd00000000-0x000000ffffffffff] reserved
+Oct 08 23:07:17 srv579909 kernel: printk: legacy bootconsole [earlyser0] enabled
+Oct 08 23:07:17 srv579909 kernel: NX (Execute Disable) protection: active
+Oct 08 23:07:17 srv579909 kernel: APIC: Static calls initialized
+Oct 08 23:07:17 srv579909 kernel: SMBIOS 2.8 present.
+Oct 08 23:07:17 srv579909 kernel: DMI: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+Oct 08 23:07:17 srv579909 kernel: Hypervisor detected: KVM
+Oct 08 23:07:17 srv579909 kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Oct 08 23:07:17 srv579909 kernel: kvm-clock: using sched offset of 5242000599951 cycles
+Oct 08 23:07:17 srv579909 kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Oct 08 23:07:17 srv579909 kernel: tsc: Detected 3250.002 MHz processor
+Oct 08 23:07:17 srv579909 kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Oct 08 23:07:17 srv579909 kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Oct 08 23:07:17 srv579909 kernel: last_pfn = 0x440000 max_arch_pfn = 0x10000000000
+Oct 08 23:07:17 srv579909 kernel: MTRR map: 4 entries (3 fixed + 1 variable; max 19), built from 8 variable MTRRs
+Oct 08 23:07:17 srv579909 kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Oct 08 23:07:17 srv579909 kernel: last_pfn = 0xbffda max_arch_pfn = 0x10000000000
+Oct 08 23:07:17 srv579909 kernel: found SMP MP-table at [mem 0x000f5450-0x000f545f]
+Oct 08 23:07:17 srv579909 kernel: Using GB pages for direct mapping
+Oct 08 23:07:17 srv579909 kernel: RAMDISK: [mem 0x34923000-0x36488fff]
+Oct 08 23:07:17 srv579909 kernel: ACPI: Early table checksum verification disabled
+Oct 08 23:07:17 srv579909 kernel: ACPI: RSDP 0x00000000000F5250 000014 (v00 BOCHS )
+Oct 08 23:07:17 srv579909 kernel: ACPI: RSDT 0x00000000BFFE31A8 00003C (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 08 23:07:17 srv579909 kernel: ACPI: FACP 0x00000000BFFE2E92 000074 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 08 23:07:17 srv579909 kernel: ACPI: DSDT 0x00000000BFFDF040 003E52 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 08 23:07:17 srv579909 kernel: ACPI: FACS 0x00000000BFFDF000 000040
+Oct 08 23:07:17 srv579909 kernel: ACPI: APIC 0x00000000BFFE2F06 000090 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 08 23:07:17 srv579909 kernel: ACPI: SSDT 0x00000000BFFE2F96 0000CA (v01 BOCHS  VMGENID  00000001 BXPC 00000001)
+Oct 08 23:07:17 srv579909 kernel: ACPI: HPET 0x00000000BFFE3060 000038 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 08 23:07:17 srv579909 kernel: ACPI: SRAT 0x00000000BFFE3098 0000E8 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 08 23:07:17 srv579909 kernel: ACPI: WAET 0x00000000BFFE3180 000028 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Oct 08 23:07:17 srv579909 kernel: ACPI: Reserving FACP table memory at [mem 0xbffe2e92-0xbffe2f05]
+Oct 08 23:07:17 srv579909 kernel: ACPI: Reserving DSDT table memory at [mem 0xbffdf040-0xbffe2e91]
+Oct 08 23:07:17 srv579909 kernel: ACPI: Reserving FACS table memory at [mem 0xbffdf000-0xbffdf03f]
+Oct 08 23:07:17 srv579909 kernel: ACPI: Reserving APIC table memory at [mem 0xbffe2f06-0xbffe2f95]
+Oct 08 23:07:17 srv579909 kernel: ACPI: Reserving SSDT table memory at [mem 0xbffe2f96-0xbffe305f]
+Oct 08 23:07:17 srv579909 kernel: ACPI: Reserving HPET table memory at [mem 0xbffe3060-0xbffe3097]
+Oct 08 23:07:17 srv579909 kernel: ACPI: Reserving SRAT table memory at [mem 0xbffe3098-0xbffe317f]
+Oct 08 23:07:17 srv579909 kernel: ACPI: Reserving WAET table memory at [mem 0xbffe3180-0xbffe31a7]
+Oct 08 23:07:17 srv579909 kernel: SRAT: PXM 0 -> APIC 0x00 -> Node 0
+Oct 08 23:07:17 srv579909 kernel: SRAT: PXM 0 -> APIC 0x01 -> Node 0
+Oct 08 23:07:17 srv579909 kernel: SRAT: PXM 0 -> APIC 0x02 -> Node 0
+Oct 08 23:07:17 srv579909 kernel: SRAT: PXM 0 -> APIC 0x03 -> Node 0
+Oct 08 23:07:17 srv579909 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x00000000-0x0009ffff]
+Oct 08 23:07:17 srv579909 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x00100000-0xbfffffff]
+Oct 08 23:07:17 srv579909 kernel: ACPI: SRAT: Node 0 PXM 0 [mem 0x100000000-0x43fffffff]
+Oct 08 23:07:17 srv579909 kernel: NUMA: Node 0 [mem 0x00000000-0x0009ffff] + [mem 0x00100000-0xbfffffff] -> [mem 0x00000000-0xbfffffff]
+Oct 08 23:07:17 srv579909 kernel: NUMA: Node 0 [mem 0x00000000-0xbfffffff] + [mem 0x100000000-0x43fffffff] -> [mem 0x00000000-0x43fffffff]
+Oct 08 23:07:17 srv579909 kernel: NODE_DATA(0) allocated [mem 0x43ffd3000-0x43fffdfff]
+Oct 08 23:07:17 srv579909 kernel: Zone ranges:
+Oct 08 23:07:17 srv579909 kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Oct 08 23:07:17 srv579909 kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Oct 08 23:07:17 srv579909 kernel:   Normal   [mem 0x0000000100000000-0x000000043fffffff]
+Oct 08 23:07:17 srv579909 kernel:   Device   empty
+Oct 08 23:07:17 srv579909 kernel: Movable zone start for each node
+Oct 08 23:07:17 srv579909 kernel: Early memory node ranges
+Oct 08 23:07:17 srv579909 kernel:   node   0: [mem 0x0000000000001000-0x000000000009efff]
+Oct 08 23:07:17 srv579909 kernel:   node   0: [mem 0x0000000000100000-0x00000000bffd9fff]
+Oct 08 23:07:17 srv579909 kernel:   node   0: [mem 0x0000000100000000-0x000000043fffffff]
+Oct 08 23:07:17 srv579909 kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000043fffffff]
+Oct 08 23:07:17 srv579909 kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Oct 08 23:07:17 srv579909 kernel: On node 0, zone DMA: 97 pages in unavailable ranges
+Oct 08 23:07:17 srv579909 kernel: On node 0, zone Normal: 38 pages in unavailable ranges
+Oct 08 23:07:17 srv579909 kernel: ACPI: PM-Timer IO Port: 0x608
+Oct 08 23:07:17 srv579909 kernel: ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+Oct 08 23:07:17 srv579909 kernel: IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+Oct 08 23:07:17 srv579909 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Oct 08 23:07:17 srv579909 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+Oct 08 23:07:17 srv579909 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Oct 08 23:07:17 srv579909 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+Oct 08 23:07:17 srv579909 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+Oct 08 23:07:17 srv579909 kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Oct 08 23:07:17 srv579909 kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Oct 08 23:07:17 srv579909 kernel: TSC deadline timer available
+Oct 08 23:07:17 srv579909 kernel: smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+Oct 08 23:07:17 srv579909 kernel: kvm-guest: APIC: eoi() replaced with kvm_guest_apic_eoi_write()
+Oct 08 23:07:17 srv579909 kernel: kvm-guest: KVM setup pv remote TLB flush
+Oct 08 23:07:17 srv579909 kernel: kvm-guest: setup PV sched yield
+Oct 08 23:07:17 srv579909 kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Oct 08 23:07:17 srv579909 kernel: PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+Oct 08 23:07:17 srv579909 kernel: PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000effff]
+Oct 08 23:07:17 srv579909 kernel: PM: hibernation: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+Oct 08 23:07:17 srv579909 kernel: PM: hibernation: Registered nosave memory: [mem 0xbffda000-0xbfffffff]
+Oct 08 23:07:17 srv579909 kernel: PM: hibernation: Registered nosave memory: [mem 0xc0000000-0xfeffbfff]
+Oct 08 23:07:17 srv579909 kernel: PM: hibernation: Registered nosave memory: [mem 0xfeffc000-0xfeffffff]
+Oct 08 23:07:17 srv579909 kernel: PM: hibernation: Registered nosave memory: [mem 0xff000000-0xfffbffff]
+Oct 08 23:07:17 srv579909 kernel: PM: hibernation: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+Oct 08 23:07:17 srv579909 kernel: [mem 0xc0000000-0xfeffbfff] available for PCI devices
+Oct 08 23:07:17 srv579909 kernel: Booting paravirtualized kernel on KVM
+Oct 08 23:07:17 srv579909 kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Oct 08 23:07:17 srv579909 kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:1
+Oct 08 23:07:17 srv579909 kernel: percpu: Embedded 86 pages/cpu s229376 r8192 d114688 u524288
+Oct 08 23:07:17 srv579909 kernel: pcpu-alloc: s229376 r8192 d114688 u524288 alloc=1*2097152
+Oct 08 23:07:17 srv579909 kernel: pcpu-alloc: [0] 0 1 2 3 
+Oct 08 23:07:17 srv579909 kernel: kvm-guest: PV spinlocks enabled
+Oct 08 23:07:17 srv579909 kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes, linear)
+Oct 08 23:07:17 srv579909 kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-6.8.0-45-generic root=UUID=b2679cb7-040c-47fb-9459-f477977bb9de ro console=tty0 console=ttyS0,115200 earlyprintk=ttyS0,115200 consoleblank=0 memhp_default_state=online console=tty1 console=ttyS0
+Oct 08 23:07:17 srv579909 kernel: Unknown kernel command line parameters "BOOT_IMAGE=/vmlinuz-6.8.0-45-generic", will be passed to user space.
+Oct 08 23:07:17 srv579909 kernel: random: crng init done
+Oct 08 23:07:17 srv579909 kernel: Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+Oct 08 23:07:17 srv579909 kernel: Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+Oct 08 23:07:17 srv579909 kernel: Fallback order for Node 0: 0 
+Oct 08 23:07:17 srv579909 kernel: Built 1 zonelists, mobility grouping on.  Total pages: 4128474
+Oct 08 23:07:17 srv579909 kernel: Policy zone: Normal
+Oct 08 23:07:17 srv579909 kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+Oct 08 23:07:17 srv579909 kernel: software IO TLB: area num 4.
+Oct 08 23:07:17 srv579909 kernel: Memory: 16340828K/16776672K available (22528K kernel code, 4442K rwdata, 14312K rodata, 4976K init, 4732K bss, 435640K reserved, 0K cma-reserved)
+Oct 08 23:07:17 srv579909 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Oct 08 23:07:17 srv579909 kernel: ftrace: allocating 57892 entries in 227 pages
+Oct 08 23:07:17 srv579909 kernel: ftrace: allocated 227 pages with 5 groups
+Oct 08 23:07:17 srv579909 kernel: Dynamic Preempt: voluntary
+Oct 08 23:07:17 srv579909 kernel: rcu: Preemptible hierarchical RCU implementation.
+Oct 08 23:07:17 srv579909 kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=4.
+Oct 08 23:07:17 srv579909 kernel:         Trampoline variant of Tasks RCU enabled.
+Oct 08 23:07:17 srv579909 kernel:         Rude variant of Tasks RCU enabled.
+Oct 08 23:07:17 srv579909 kernel:         Tracing variant of Tasks RCU enabled.
+Oct 08 23:07:17 srv579909 kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Oct 08 23:07:17 srv579909 kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+Oct 08 23:07:17 srv579909 kernel: NR_IRQS: 524544, nr_irqs: 456, preallocated irqs: 16
+Oct 08 23:07:17 srv579909 kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Oct 08 23:07:17 srv579909 kernel: Console: colour VGA+ 80x25
+Oct 08 23:07:17 srv579909 kernel: printk: legacy console [tty0] enabled
+Oct 08 23:07:17 srv579909 kernel: printk: legacy console [ttyS0] enabled
+Oct 08 23:07:17 srv579909 kernel: printk: legacy bootconsole [earlyser0] disabled
+Oct 08 23:07:17 srv579909 kernel: ACPI: Core revision 20230628
+Oct 08 23:07:17 srv579909 kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+Oct 08 23:07:17 srv579909 kernel: APIC: Switch to symmetric I/O mode setup
+Oct 08 23:07:17 srv579909 kernel: x2apic enabled
+Oct 08 23:07:17 srv579909 kernel: APIC: Switched APIC routing to: physical x2apic
+Oct 08 23:07:17 srv579909 kernel: kvm-guest: APIC: send_IPI_mask() replaced with kvm_send_ipi_mask()
+Oct 08 23:07:17 srv579909 kernel: kvm-guest: APIC: send_IPI_mask_allbutself() replaced with kvm_send_ipi_mask_allbutself()
+Oct 08 23:07:17 srv579909 kernel: kvm-guest: setup PV IPIs
+Oct 08 23:07:17 srv579909 kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Oct 08 23:07:17 srv579909 kernel: tsc: Marking TSC unstable due to TSCs unsynchronized
+Oct 08 23:07:17 srv579909 kernel: Calibrating delay loop (skipped) preset value.. 6500.00 BogoMIPS (lpj=3250002)
+Oct 08 23:07:17 srv579909 kernel: x86/cpu: User Mode Instruction Prevention (UMIP) activated
+Oct 08 23:07:17 srv579909 kernel: Last level iTLB entries: 4KB 512, 2MB 255, 4MB 127
+Oct 08 23:07:17 srv579909 kernel: Last level dTLB entries: 4KB 512, 2MB 255, 4MB 127, 1GB 0
+Oct 08 23:07:17 srv579909 kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Oct 08 23:07:17 srv579909 kernel: Spectre V2 : Mitigation: Enhanced / Automatic IBRS
+Oct 08 23:07:17 srv579909 kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+Oct 08 23:07:17 srv579909 kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+Oct 08 23:07:17 srv579909 kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+Oct 08 23:07:17 srv579909 kernel: Speculative Return Stack Overflow: IBPB-extending microcode not applied!
+Oct 08 23:07:17 srv579909 kernel: Speculative Return Stack Overflow: WARNING: See https://kernel.org/doc/html/latest/admin-guide/hw-vuln/srso.html for mitigation options.
+Oct 08 23:07:17 srv579909 kernel: Speculative Return Stack Overflow: Vulnerable: Safe RET, no microcode
+Oct 08 23:07:17 srv579909 kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Oct 08 23:07:17 srv579909 kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Oct 08 23:07:17 srv579909 kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Oct 08 23:07:17 srv579909 kernel: x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 opmask'
+Oct 08 23:07:17 srv579909 kernel: x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256'
+Oct 08 23:07:17 srv579909 kernel: x86/fpu: Supporting XSAVE feature 0x080: 'AVX-512 ZMM_Hi256'
+Oct 08 23:07:17 srv579909 kernel: x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+Oct 08 23:07:17 srv579909 kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Oct 08 23:07:17 srv579909 kernel: x86/fpu: xstate_offset[5]:  832, xstate_sizes[5]:   64
+Oct 08 23:07:17 srv579909 kernel: x86/fpu: xstate_offset[6]:  896, xstate_sizes[6]:  512
+Oct 08 23:07:17 srv579909 kernel: x86/fpu: xstate_offset[7]: 1408, xstate_sizes[7]: 1024
+Oct 08 23:07:17 srv579909 kernel: x86/fpu: xstate_offset[9]: 2432, xstate_sizes[9]:    8
+Oct 08 23:07:17 srv579909 kernel: x86/fpu: Enabled xstate features 0x2e7, context size is 2440 bytes, using 'compacted' format.
+Oct 08 23:07:17 srv579909 kernel: Freeing SMP alternatives memory: 48K
+Oct 08 23:07:17 srv579909 kernel: pid_max: default: 32768 minimum: 301
+Oct 08 23:07:17 srv579909 kernel: LSM: initializing lsm=lockdown,capability,landlock,yama,apparmor,integrity
+Oct 08 23:07:17 srv579909 kernel: landlock: Up and running.
+Oct 08 23:07:17 srv579909 kernel: Yama: becoming mindful.
+Oct 08 23:07:17 srv579909 kernel: AppArmor: AppArmor initialized
+Oct 08 23:07:17 srv579909 kernel: Mount-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Oct 08 23:07:17 srv579909 kernel: Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Oct 08 23:07:17 srv579909 kernel: smpboot: CPU0: AMD EPYC 9354P 32-Core Processor (family: 0x19, model: 0x11, stepping: 0x1)
+Oct 08 23:07:17 srv579909 kernel: RCU Tasks: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1.
+Oct 08 23:07:17 srv579909 kernel: RCU Tasks Rude: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1.
+Oct 08 23:07:17 srv579909 kernel: RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1.
+Oct 08 23:07:17 srv579909 kernel: Performance Events: Fam17h+ core perfctr, AMD PMU driver.
+Oct 08 23:07:17 srv579909 kernel: ... version:                0
+Oct 08 23:07:17 srv579909 kernel: ... bit width:              48
+Oct 08 23:07:17 srv579909 kernel: ... generic registers:      6
+Oct 08 23:07:17 srv579909 kernel: ... value mask:             0000ffffffffffff
+Oct 08 23:07:17 srv579909 kernel: ... max period:             00007fffffffffff
+Oct 08 23:07:17 srv579909 kernel: ... fixed-purpose events:   0
+Oct 08 23:07:17 srv579909 kernel: ... event mask:             000000000000003f
+Oct 08 23:07:17 srv579909 kernel: signal: max sigframe size: 3376
+Oct 08 23:07:17 srv579909 kernel: rcu: Hierarchical SRCU implementation.
+Oct 08 23:07:17 srv579909 kernel: rcu:         Max phase no-delay instances is 400.
+Oct 08 23:07:17 srv579909 kernel: smp: Bringing up secondary CPUs ...
+Oct 08 23:07:17 srv579909 kernel: smpboot: x86: Booting SMP configuration:
+Oct 08 23:07:17 srv579909 kernel: .... node  #0, CPUs:      #1 #2 #3
+Oct 08 23:07:17 srv579909 kernel: smp: Brought up 1 node, 4 CPUs
+Oct 08 23:07:17 srv579909 kernel: smpboot: Max logical packages: 1
+Oct 08 23:07:17 srv579909 kernel: smpboot: Total of 4 processors activated (26000.01 BogoMIPS)
+Oct 08 23:07:17 srv579909 kernel: devtmpfs: initialized
+Oct 08 23:07:17 srv579909 kernel: x86/mm: Memory block size: 128MB
+Oct 08 23:07:17 srv579909 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Oct 08 23:07:17 srv579909 kernel: futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+Oct 08 23:07:17 srv579909 kernel: pinctrl core: initialized pinctrl subsystem
+Oct 08 23:07:17 srv579909 kernel: PM: RTC time: 23:07:13, date: 2024-10-08
+Oct 08 23:07:17 srv579909 kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Oct 08 23:07:17 srv579909 kernel: DMA: preallocated 2048 KiB GFP_KERNEL pool for atomic allocations
+Oct 08 23:07:17 srv579909 kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Oct 08 23:07:17 srv579909 kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Oct 08 23:07:17 srv579909 kernel: audit: initializing netlink subsys (disabled)
+Oct 08 23:07:17 srv579909 kernel: audit: type=2000 audit(1728428833.408:1): state=initialized audit_enabled=0 res=1
+Oct 08 23:07:17 srv579909 kernel: thermal_sys: Registered thermal governor 'fair_share'
+Oct 08 23:07:17 srv579909 kernel: thermal_sys: Registered thermal governor 'bang_bang'
+Oct 08 23:07:17 srv579909 kernel: thermal_sys: Registered thermal governor 'step_wise'
+Oct 08 23:07:17 srv579909 kernel: thermal_sys: Registered thermal governor 'user_space'
+Oct 08 23:07:17 srv579909 kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Oct 08 23:07:17 srv579909 kernel: EISA bus registered
+Oct 08 23:07:17 srv579909 kernel: cpuidle: using governor ladder
+Oct 08 23:07:17 srv579909 kernel: cpuidle: using governor menu
+Oct 08 23:07:17 srv579909 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Oct 08 23:07:17 srv579909 kernel: PCI: Using configuration type 1 for base access
+Oct 08 23:07:17 srv579909 kernel: PCI: Using configuration type 1 for extended access
+Oct 08 23:07:17 srv579909 kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Oct 08 23:07:17 srv579909 kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+Oct 08 23:07:17 srv579909 kernel: HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+Oct 08 23:07:17 srv579909 kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Oct 08 23:07:17 srv579909 kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+Oct 08 23:07:17 srv579909 kernel: ACPI: Added _OSI(Module Device)
+Oct 08 23:07:17 srv579909 kernel: ACPI: Added _OSI(Processor Device)
+Oct 08 23:07:17 srv579909 kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+Oct 08 23:07:17 srv579909 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Oct 08 23:07:17 srv579909 kernel: ACPI: 2 ACPI AML tables successfully acquired and loaded
+Oct 08 23:07:17 srv579909 kernel: ACPI: _OSC evaluation for CPUs failed, trying _PDC
+Oct 08 23:07:17 srv579909 kernel: ACPI: Interpreter enabled
+Oct 08 23:07:17 srv579909 kernel: ACPI: PM: (supports S0 S3 S4 S5)
+Oct 08 23:07:17 srv579909 kernel: ACPI: Using IOAPIC for interrupt routing
+Oct 08 23:07:17 srv579909 kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Oct 08 23:07:17 srv579909 kernel: PCI: Using E820 reservations for host bridge windows
+Oct 08 23:07:17 srv579909 kernel: ACPI: Enabled 3 GPEs in block 00 to 0F
+Oct 08 23:07:17 srv579909 kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Oct 08 23:07:17 srv579909 kernel: acpi PNP0A03:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [8] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [18] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [6] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [7] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [9] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [10] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [11] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [12] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [13] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [14] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [15] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [16] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [17] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [19] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [20] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [21] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [22] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [23] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [24] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [25] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [26] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [27] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [28] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [29] registered
+Oct 08 23:07:17 srv579909 kernel: PCI host bridge to bus 0000:00
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfffff window]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:00: root bus resource [mem 0x380000000000-0x38200000bfff window]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000 conventional PCI endpoint
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100 conventional PCI endpoint
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:01.1: [8086:7010] type 00 class 0x010180 conventional PCI endpoint
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:01.1: BAR 4 [io  0xf0e0-0xf0ef]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:01.1: BAR 0 [io  0x01f0-0x01f7]: legacy IDE quirk
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:01.1: BAR 1 [io  0x03f6]: legacy IDE quirk
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:01.1: BAR 2 [io  0x0170-0x0177]: legacy IDE quirk
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:01.1: BAR 3 [io  0x0376]: legacy IDE quirk
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:01.2: [8086:7020] type 00 class 0x0c0300 conventional PCI endpoint
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:01.2: BAR 4 [io  0xf0c0-0xf0df]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:01.3: [8086:7113] type 00 class 0x068000 conventional PCI endpoint
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:01.3: quirk: [io  0x0600-0x063f] claimed by PIIX4 ACPI
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:01.3: quirk: [io  0x0700-0x070f] claimed by PIIX4 SMB
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:03.0: [1af4:1002] type 00 class 0x00ff00 conventional PCI endpoint
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:03.0: BAR 0 [io  0xf000-0xf03f]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:03.0: BAR 4 [mem 0x382000000000-0x382000003fff 64bit pref]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:05.0: [1b36:0001] type 01 class 0x060400 conventional PCI bridge
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:05.0: BAR 0 [mem 0x380000000000-0x3800000000ff 64bit]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:05.0: PCI bridge to [bus 01]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:05.0:   bridge window [io  0xe000-0xefff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:05.0:   bridge window [mem 0xfe800000-0xfe9fffff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:05.0:   bridge window [mem 0x381800000000-0x381fffffffff 64bit pref]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:08.0: [1af4:1003] type 00 class 0x078000 conventional PCI endpoint
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:08.0: BAR 0 [io  0xf040-0xf07f]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:08.0: BAR 1 [mem 0xfea40000-0xfea40fff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:08.0: BAR 4 [mem 0x382000004000-0x382000007fff 64bit pref]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:12.0: [1af4:1000] type 00 class 0x020000 conventional PCI endpoint
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:12.0: BAR 0 [io  0xf080-0xf0bf]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:12.0: BAR 1 [mem 0xfea41000-0xfea41fff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:12.0: BAR 4 [mem 0x382000008000-0x38200000bfff 64bit pref]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:12.0: ROM [mem 0xfea00000-0xfea3ffff pref]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1e.0: [1b36:0001] type 01 class 0x060400 conventional PCI bridge
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1e.0: BAR 0 [mem 0x380000001000-0x3800000010ff 64bit]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1e.0: PCI bridge to [bus 02]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1e.0:   bridge window [io  0xd000-0xdfff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1e.0:   bridge window [mem 0xfe600000-0xfe7fffff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1e.0:   bridge window [mem 0x381000000000-0x3817ffffffff 64bit pref]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1f.0: [1b36:0001] type 01 class 0x060400 conventional PCI bridge
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1f.0: BAR 0 [mem 0x380000002000-0x3800000020ff 64bit]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1f.0: PCI bridge to [bus 03]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1f.0:   bridge window [io  0xc000-0xcfff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1f.0:   bridge window [mem 0xfe400000-0xfe5fffff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1f.0:   bridge window [mem 0x380800000000-0x380fffffffff 64bit pref]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:01: extended config space not accessible
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [1-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [0] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [2-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [3-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [4-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [5] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [6-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [7-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [8-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [9-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [10-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [11-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [12-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [13-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [14-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [15-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [16-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [17-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [18-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [19-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [20-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [21-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [22-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [23-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [24-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [25-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [26-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [27-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [28-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [29-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [30] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [31] registered
+Oct 08 23:07:17 srv579909 kernel: pci 0000:01:01.0: [1af4:1004] type 00 class 0x010000 conventional PCI endpoint
+Oct 08 23:07:17 srv579909 kernel: pci 0000:01:01.0: BAR 0 [io  0xe000-0xe03f]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:01:01.0: BAR 1 [mem 0xfe800000-0xfe800fff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:01:01.0: BAR 4 [mem 0x381800000000-0x381800003fff 64bit pref]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:05.0: PCI bridge to [bus 01]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:02: extended config space not accessible
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [0-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [1-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [2-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [3-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [4-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [5-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [6-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [7-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [8-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [9-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [10-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [11-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [12-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [13-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [14-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [15-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [16-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [17-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [18-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [19-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [20-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [21-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [22-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [23-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [24-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [25-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [26-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [27-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [28-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [29-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [30-2] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [31-2] registered
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1e.0: PCI bridge to [bus 02]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:03: extended config space not accessible
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [0-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [1-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [2-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [3-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [4-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [5-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [6-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [7-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [8-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [9-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [10-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [11-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [12-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [13-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [14-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [15-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [16-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [17-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [18-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [19-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [20-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [21-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [22-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [23-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [24-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [25-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [26-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [27-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [28-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [29-4] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [30-3] registered
+Oct 08 23:07:17 srv579909 kernel: acpiphp: Slot [31-3] registered
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1f.0: PCI bridge to [bus 03]
+Oct 08 23:07:17 srv579909 kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 10
+Oct 08 23:07:17 srv579909 kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Oct 08 23:07:17 srv579909 kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+Oct 08 23:07:17 srv579909 kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+Oct 08 23:07:17 srv579909 kernel: ACPI: PCI: Interrupt link LNKS configured for IRQ 9
+Oct 08 23:07:17 srv579909 kernel: iommu: Default domain type: Translated
+Oct 08 23:07:17 srv579909 kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+Oct 08 23:07:17 srv579909 kernel: SCSI subsystem initialized
+Oct 08 23:07:17 srv579909 kernel: libata version 3.00 loaded.
+Oct 08 23:07:17 srv579909 kernel: ACPI: bus type USB registered
+Oct 08 23:07:17 srv579909 kernel: usbcore: registered new interface driver usbfs
+Oct 08 23:07:17 srv579909 kernel: usbcore: registered new interface driver hub
+Oct 08 23:07:17 srv579909 kernel: usbcore: registered new device driver usb
+Oct 08 23:07:17 srv579909 kernel: pps_core: LinuxPPS API ver. 1 registered
+Oct 08 23:07:17 srv579909 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Oct 08 23:07:17 srv579909 kernel: PTP clock support registered
+Oct 08 23:07:17 srv579909 kernel: EDAC MC: Ver: 3.0.0
+Oct 08 23:07:17 srv579909 kernel: NetLabel: Initializing
+Oct 08 23:07:17 srv579909 kernel: NetLabel:  domain hash size = 128
+Oct 08 23:07:17 srv579909 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Oct 08 23:07:17 srv579909 kernel: NetLabel:  unlabeled traffic allowed by default
+Oct 08 23:07:17 srv579909 kernel: mctp: management component transport protocol core
+Oct 08 23:07:17 srv579909 kernel: NET: Registered PF_MCTP protocol family
+Oct 08 23:07:17 srv579909 kernel: PCI: Using ACPI for IRQ routing
+Oct 08 23:07:17 srv579909 kernel: PCI: pci_cache_line_size set to 64 bytes
+Oct 08 23:07:17 srv579909 kernel: e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+Oct 08 23:07:17 srv579909 kernel: e820: reserve RAM buffer [mem 0xbffda000-0xbfffffff]
+Oct 08 23:07:17 srv579909 kernel: vgaarb: loaded
+Oct 08 23:07:17 srv579909 kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+Oct 08 23:07:17 srv579909 kernel: hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+Oct 08 23:07:17 srv579909 kernel: clocksource: Switched to clocksource kvm-clock
+Oct 08 23:07:17 srv579909 kernel: VFS: Disk quotas dquot_6.6.0
+Oct 08 23:07:17 srv579909 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Oct 08 23:07:17 srv579909 kernel: AppArmor: AppArmor Filesystem Enabled
+Oct 08 23:07:17 srv579909 kernel: pnp: PnP ACPI init
+Oct 08 23:07:17 srv579909 kernel: pnp 00:03: [dma 2]
+Oct 08 23:07:17 srv579909 kernel: pnp: PnP ACPI: found 5 devices
+Oct 08 23:07:17 srv579909 kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Oct 08 23:07:17 srv579909 kernel: NET: Registered PF_INET protocol family
+Oct 08 23:07:17 srv579909 kernel: IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Oct 08 23:07:17 srv579909 kernel: tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 bytes, linear)
+Oct 08 23:07:17 srv579909 kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Oct 08 23:07:17 srv579909 kernel: TCP established hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Oct 08 23:07:17 srv579909 kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Oct 08 23:07:17 srv579909 kernel: TCP: Hash tables configured (established 131072 bind 65536)
+Oct 08 23:07:17 srv579909 kernel: MPTCP token hash table entries: 16384 (order: 6, 393216 bytes, linear)
+Oct 08 23:07:17 srv579909 kernel: UDP hash table entries: 8192 (order: 6, 262144 bytes, linear)
+Oct 08 23:07:17 srv579909 kernel: UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes, linear)
+Oct 08 23:07:17 srv579909 kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Oct 08 23:07:17 srv579909 kernel: NET: Registered PF_XDP protocol family
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:05.0: PCI bridge to [bus 01]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:05.0:   bridge window [io  0xe000-0xefff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:05.0:   bridge window [mem 0xfe800000-0xfe9fffff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:05.0:   bridge window [mem 0x381800000000-0x381fffffffff 64bit pref]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1e.0: PCI bridge to [bus 02]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1e.0:   bridge window [io  0xd000-0xdfff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1e.0:   bridge window [mem 0xfe600000-0xfe7fffff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1e.0:   bridge window [mem 0x381000000000-0x3817ffffffff 64bit pref]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1f.0: PCI bridge to [bus 03]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1f.0:   bridge window [io  0xc000-0xcfff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1f.0:   bridge window [mem 0xfe400000-0xfe5fffff]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:1f.0:   bridge window [mem 0x380800000000-0x380fffffffff 64bit pref]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:00: resource 7 [mem 0xc0000000-0xfebfffff window]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:00: resource 8 [mem 0x380000000000-0x38200000bfff window]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:01: resource 0 [io  0xe000-0xefff]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:01: resource 1 [mem 0xfe800000-0xfe9fffff]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:01: resource 2 [mem 0x381800000000-0x381fffffffff 64bit pref]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:02: resource 0 [io  0xd000-0xdfff]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:02: resource 1 [mem 0xfe600000-0xfe7fffff]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:02: resource 2 [mem 0x381000000000-0x3817ffffffff 64bit pref]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:03: resource 0 [io  0xc000-0xcfff]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:03: resource 1 [mem 0xfe400000-0xfe5fffff]
+Oct 08 23:07:17 srv579909 kernel: pci_bus 0000:03: resource 2 [mem 0x380800000000-0x380fffffffff 64bit pref]
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:01.0: PIIX3: Enabling Passive Release
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Oct 08 23:07:17 srv579909 kernel: ACPI: \_SB_.LNKD: Enabled at IRQ 11
+Oct 08 23:07:17 srv579909 kernel: pci 0000:00:01.2: quirk_usb_early_handoff+0x0/0x190 took 91137 usecs
+Oct 08 23:07:17 srv579909 kernel: PCI: CLS 0 bytes, default 64
+Oct 08 23:07:17 srv579909 kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Oct 08 23:07:17 srv579909 kernel: Trying to unpack rootfs image as initramfs...
+Oct 08 23:07:17 srv579909 kernel: software IO TLB: mapped [mem 0x00000000bbfda000-0x00000000bffda000] (64MB)
+Oct 08 23:07:17 srv579909 kernel: Initialise system trusted keyrings
+Oct 08 23:07:17 srv579909 kernel: Key type blacklist registered
+Oct 08 23:07:17 srv579909 kernel: workingset: timestamp_bits=36 max_order=22 bucket_order=0
+Oct 08 23:07:17 srv579909 kernel: zbud: loaded
+Oct 08 23:07:17 srv579909 kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Oct 08 23:07:17 srv579909 kernel: fuse: init (API version 7.39)
+Oct 08 23:07:17 srv579909 kernel: integrity: Platform Keyring initialized
+Oct 08 23:07:17 srv579909 kernel: integrity: Machine keyring initialized
+Oct 08 23:07:17 srv579909 kernel: Key type asymmetric registered
+Oct 08 23:07:17 srv579909 kernel: Asymmetric key parser 'x509' registered
+Oct 08 23:07:17 srv579909 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 243)
+Oct 08 23:07:17 srv579909 kernel: io scheduler mq-deadline registered
+Oct 08 23:07:17 srv579909 kernel: shpchp 0000:00:05.0: Requesting control of SHPC hotplug via OSHP (\_SB_.PCI0.S28_)
+Oct 08 23:07:17 srv579909 kernel: shpchp 0000:00:05.0: Requesting control of SHPC hotplug via OSHP (\_SB_.PCI0)
+Oct 08 23:07:17 srv579909 kernel: shpchp 0000:00:05.0: Cannot get control of SHPC hotplug
+Oct 08 23:07:17 srv579909 kernel: shpchp 0000:00:1e.0: Requesting control of SHPC hotplug via OSHP (\_SB_.PCI0.SF0_)
+Oct 08 23:07:17 srv579909 kernel: shpchp 0000:00:1e.0: Requesting control of SHPC hotplug via OSHP (\_SB_.PCI0)
+Oct 08 23:07:17 srv579909 kernel: shpchp 0000:00:1e.0: Cannot get control of SHPC hotplug
+Oct 08 23:07:17 srv579909 kernel: shpchp 0000:00:1f.0: Requesting control of SHPC hotplug via OSHP (\_SB_.PCI0.SF8_)
+Oct 08 23:07:17 srv579909 kernel: shpchp 0000:00:1f.0: Requesting control of SHPC hotplug via OSHP (\_SB_.PCI0)
+Oct 08 23:07:17 srv579909 kernel: shpchp 0000:00:1f.0: Cannot get control of SHPC hotplug
+Oct 08 23:07:17 srv579909 kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Oct 08 23:07:17 srv579909 kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+Oct 08 23:07:17 srv579909 kernel: ACPI: button: Power Button [PWRF]
+Oct 08 23:07:17 srv579909 kernel: ACPI: \_SB_.LNKC: Enabled at IRQ 10
+Oct 08 23:07:17 srv579909 kernel: Freeing initrd memory: 28056K
+Oct 08 23:07:17 srv579909 kernel: ACPI: \_SB_.LNKB: Enabled at IRQ 10
+Oct 08 23:07:17 srv579909 kernel: ACPI: \_SB_.LNKA: Enabled at IRQ 11
+Oct 08 23:07:17 srv579909 kernel: Free page reporting enabled
+Oct 08 23:07:17 srv579909 kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+Oct 08 23:07:17 srv579909 kernel: 00:00: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+Oct 08 23:07:17 srv579909 kernel: Linux agpgart interface v0.103
+Oct 08 23:07:17 srv579909 kernel: loop: module loaded
+Oct 08 23:07:17 srv579909 kernel: virtio_scsi virtio3: 1/0/0 default/read/poll queues
+Oct 08 23:07:17 srv579909 kernel: scsi host0: Virtio SCSI HBA
+Oct 08 23:07:17 srv579909 kernel: ata_piix 0000:00:01.1: version 2.13
+Oct 08 23:07:17 srv579909 kernel: scsi 0:0:0:0: Direct-Access     QEMU     QEMU HARDDISK    2.5+ PQ: 0 ANSI: 5
+Oct 08 23:07:17 srv579909 kernel: scsi host1: ata_piix
+Oct 08 23:07:17 srv579909 kernel: scsi host2: ata_piix
+Oct 08 23:07:17 srv579909 kernel: ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xf0e0 irq 14 lpm-pol 0
+Oct 08 23:07:17 srv579909 kernel: ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xf0e8 irq 15 lpm-pol 0
+Oct 08 23:07:17 srv579909 kernel: ACPI: bus type drm_connector registered
+Oct 08 23:07:17 srv579909 kernel: tun: Universal TUN/TAP device driver, 1.6
+Oct 08 23:07:17 srv579909 kernel: PPP generic driver version 2.4.2
+Oct 08 23:07:17 srv579909 kernel: scsi 0:0:0:0: Attached scsi generic sg0 type 0
+Oct 08 23:07:17 srv579909 kernel: sd 0:0:0:0: Power-on or device reset occurred
+Oct 08 23:07:17 srv579909 kernel: sd 0:0:0:0: [sda] 419430400 512-byte logical blocks: (215 GB/200 GiB)
+Oct 08 23:07:17 srv579909 kernel: sd 0:0:0:0: [sda] Write Protect is off
+Oct 08 23:07:17 srv579909 kernel: sd 0:0:0:0: [sda] Mode Sense: 63 00 00 08
+Oct 08 23:07:17 srv579909 kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct 08 23:07:17 srv579909 kernel:  sda: sda1 sda14 sda15 sda16
+Oct 08 23:07:17 srv579909 kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+Oct 08 23:07:17 srv579909 kernel: uhci_hcd 0000:00:01.2: UHCI Host Controller
+Oct 08 23:07:17 srv579909 kernel: uhci_hcd 0000:00:01.2: new USB bus registered, assigned bus number 1
+Oct 08 23:07:17 srv579909 kernel: uhci_hcd 0000:00:01.2: detected 2 ports
+Oct 08 23:07:17 srv579909 kernel: uhci_hcd 0000:00:01.2: irq 11, io port 0x0000f0c0
+Oct 08 23:07:17 srv579909 kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 6.08
+Oct 08 23:07:17 srv579909 kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct 08 23:07:17 srv579909 kernel: usb usb1: Product: UHCI Host Controller
+Oct 08 23:07:17 srv579909 kernel: usb usb1: Manufacturer: Linux 6.8.0-45-generic uhci_hcd
+Oct 08 23:07:17 srv579909 kernel: usb usb1: SerialNumber: 0000:00:01.2
+Oct 08 23:07:17 srv579909 kernel: hub 1-0:1.0: USB hub found
+Oct 08 23:07:17 srv579909 kernel: hub 1-0:1.0: 2 ports detected
+Oct 08 23:07:17 srv579909 kernel: i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+Oct 08 23:07:17 srv579909 kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Oct 08 23:07:17 srv579909 kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Oct 08 23:07:17 srv579909 kernel: mousedev: PS/2 mouse device common for all mice
+Oct 08 23:07:17 srv579909 kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+Oct 08 23:07:17 srv579909 kernel: rtc_cmos 00:04: RTC can wake from S4
+Oct 08 23:07:17 srv579909 kernel: rtc_cmos 00:04: registered as rtc0
+Oct 08 23:07:17 srv579909 kernel: rtc_cmos 00:04: setting system clock to 2024-10-08T23:07:14 UTC (1728428834)
+Oct 08 23:07:17 srv579909 kernel: rtc_cmos 00:04: alarms up to one day, y3k, 242 bytes nvram, hpet irqs
+Oct 08 23:07:17 srv579909 kernel: i2c_dev: i2c /dev entries driver
+Oct 08 23:07:17 srv579909 kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+Oct 08 23:07:17 srv579909 kernel: device-mapper: uevent: version 1.0.3
+Oct 08 23:07:17 srv579909 kernel: device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+Oct 08 23:07:17 srv579909 kernel: platform eisa.0: Probing EISA bus 0
+Oct 08 23:07:17 srv579909 kernel: platform eisa.0: EISA: Cannot allocate resource for mainboard
+Oct 08 23:07:17 srv579909 kernel: platform eisa.0: Cannot allocate resource for EISA slot 1
+Oct 08 23:07:17 srv579909 kernel: platform eisa.0: Cannot allocate resource for EISA slot 2
+Oct 08 23:07:17 srv579909 kernel: platform eisa.0: Cannot allocate resource for EISA slot 3
+Oct 08 23:07:17 srv579909 kernel: platform eisa.0: Cannot allocate resource for EISA slot 4
+Oct 08 23:07:17 srv579909 kernel: platform eisa.0: Cannot allocate resource for EISA slot 5
+Oct 08 23:07:17 srv579909 kernel: platform eisa.0: Cannot allocate resource for EISA slot 6
+Oct 08 23:07:17 srv579909 kernel: platform eisa.0: Cannot allocate resource for EISA slot 7
+Oct 08 23:07:17 srv579909 kernel: platform eisa.0: Cannot allocate resource for EISA slot 8
+Oct 08 23:07:17 srv579909 kernel: platform eisa.0: EISA: Detected 0 cards
+Oct 08 23:07:17 srv579909 kernel: amd_pstate: the _CPC object is not present in SBIOS or ACPI disabled
+Oct 08 23:07:17 srv579909 kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Oct 08 23:07:17 srv579909 kernel: drop_monitor: Initializing network drop monitor service
+Oct 08 23:07:17 srv579909 kernel: NET: Registered PF_INET6 protocol family
+Oct 08 23:07:17 srv579909 kernel: Segment Routing with IPv6
+Oct 08 23:07:17 srv579909 kernel: In-situ OAM (IOAM) with IPv6
+Oct 08 23:07:17 srv579909 kernel: NET: Registered PF_PACKET protocol family
+Oct 08 23:07:17 srv579909 kernel: Key type dns_resolver registered
+Oct 08 23:07:17 srv579909 kernel: IPI shorthand broadcast: enabled
+Oct 08 23:07:17 srv579909 kernel: sched_clock: Marking stable (1291003218, 16470935)->(1325533534, -18059381)
+Oct 08 23:07:17 srv579909 kernel: registered taskstats version 1
+Oct 08 23:07:17 srv579909 kernel: Loading compiled-in X.509 certificates
+Oct 08 23:07:17 srv579909 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 7e025e0cbc510606ab90d1bfb5b71bc9263fcc8e'
+Oct 08 23:07:17 srv579909 kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+Oct 08 23:07:17 srv579909 kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+Oct 08 23:07:17 srv579909 kernel: blacklist: Loading compiled-in revocation X.509 certificates
+Oct 08 23:07:17 srv579909 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+Oct 08 23:07:17 srv579909 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+Oct 08 23:07:17 srv579909 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+Oct 08 23:07:17 srv579909 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+Oct 08 23:07:17 srv579909 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+Oct 08 23:07:17 srv579909 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+Oct 08 23:07:17 srv579909 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+Oct 08 23:07:17 srv579909 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+Oct 08 23:07:17 srv579909 kernel: Key type .fscrypt registered
+Oct 08 23:07:17 srv579909 kernel: Key type fscrypt-provisioning registered
+Oct 08 23:07:17 srv579909 kernel: cryptd: max_cpu_qlen set to 1000
+Oct 08 23:07:17 srv579909 kernel: ata2: found unknown device (class 0)
+Oct 08 23:07:17 srv579909 kernel: ata2.00: ATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+Oct 08 23:07:17 srv579909 kernel: scsi 2:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.5+ PQ: 0 ANSI: 5
+Oct 08 23:07:17 srv579909 kernel: sr 2:0:0:0: [sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+Oct 08 23:07:17 srv579909 kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+Oct 08 23:07:17 srv579909 kernel: sr 2:0:0:0: Attached scsi CD-ROM sr0
+Oct 08 23:07:17 srv579909 kernel: sr 2:0:0:0: Attached scsi generic sg1 type 5
+Oct 08 23:07:17 srv579909 kernel: AVX2 version of gcm_enc/dec engaged.
+Oct 08 23:07:17 srv579909 kernel: AES CTR mode by8 optimization enabled
+Oct 08 23:07:17 srv579909 kernel: Key type encrypted registered
+Oct 08 23:07:17 srv579909 kernel: AppArmor: AppArmor sha256 policy hashing enabled
+Oct 08 23:07:17 srv579909 kernel: ima: No TPM chip found, activating TPM-bypass!
+Oct 08 23:07:17 srv579909 kernel: Loading compiled-in module X.509 certificates
+Oct 08 23:07:17 srv579909 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 7e025e0cbc510606ab90d1bfb5b71bc9263fcc8e'
+Oct 08 23:07:17 srv579909 kernel: ima: Allocated hash algorithm: sha256
+Oct 08 23:07:17 srv579909 kernel: ima: No architecture policies found
+Oct 08 23:07:17 srv579909 kernel: evm: Initialising EVM extended attributes:
+Oct 08 23:07:17 srv579909 kernel: evm: security.selinux
+Oct 08 23:07:17 srv579909 kernel: evm: security.SMACK64
+Oct 08 23:07:17 srv579909 kernel: evm: security.SMACK64EXEC
+Oct 08 23:07:17 srv579909 kernel: evm: security.SMACK64TRANSMUTE
+Oct 08 23:07:17 srv579909 kernel: evm: security.SMACK64MMAP
+Oct 08 23:07:17 srv579909 kernel: evm: security.apparmor
+Oct 08 23:07:17 srv579909 kernel: evm: security.ima
+Oct 08 23:07:17 srv579909 kernel: evm: security.capability
+Oct 08 23:07:17 srv579909 kernel: evm: HMAC attrs: 0x1
+Oct 08 23:07:17 srv579909 kernel: PM:   Magic number: 12:132:150
+Oct 08 23:07:17 srv579909 kernel: virtio_console virtio1: hash matches
+Oct 08 23:07:17 srv579909 kernel: RAS: Correctable Errors collector initialized.
+Oct 08 23:07:17 srv579909 kernel: clk: Disabling unused clocks
+Oct 08 23:07:17 srv579909 kernel: Freeing unused decrypted memory: 2028K
+Oct 08 23:07:17 srv579909 kernel: Freeing unused kernel image (initmem) memory: 4976K
+Oct 08 23:07:17 srv579909 kernel: Write protecting the kernel read-only data: 36864k
+Oct 08 23:07:17 srv579909 kernel: Freeing unused kernel image (rodata/data gap) memory: 24K
+Oct 08 23:07:17 srv579909 kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Oct 08 23:07:17 srv579909 kernel: Run /init as init process
+Oct 08 23:07:17 srv579909 kernel:   with arguments:
+Oct 08 23:07:17 srv579909 kernel:     /init
+Oct 08 23:07:17 srv579909 kernel:   with environment:
+Oct 08 23:07:17 srv579909 kernel:     HOME=/
+Oct 08 23:07:17 srv579909 kernel:     TERM=linux
+Oct 08 23:07:17 srv579909 kernel:     BOOT_IMAGE=/vmlinuz-6.8.0-45-generic
+Oct 08 23:07:17 srv579909 kernel: input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input4
+Oct 08 23:07:17 srv579909 kernel: virtio_net virtio2 ens18: renamed from eth0
+Oct 08 23:07:17 srv579909 kernel: input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input3
+Oct 08 23:07:17 srv579909 kernel: FDC 0 is a S82078B
+Oct 08 23:07:17 srv579909 kernel: raid6: avx512x4 gen() 41562 MB/s
+Oct 08 23:07:17 srv579909 kernel: raid6: avx512x2 gen() 42747 MB/s
+Oct 08 23:07:17 srv579909 kernel: raid6: avx512x1 gen() 37086 MB/s
+Oct 08 23:07:17 srv579909 kernel: raid6: avx2x4   gen() 31671 MB/s
+Oct 08 23:07:17 srv579909 kernel: raid6: avx2x2   gen() 35137 MB/s
+Oct 08 23:07:17 srv579909 kernel: raid6: avx2x1   gen() 38317 MB/s
+Oct 08 23:07:17 srv579909 kernel: raid6: using algorithm avx512x2 gen() 42747 MB/s
+Oct 08 23:07:17 srv579909 kernel: raid6: .... xor() 29119 MB/s, rmw enabled
+Oct 08 23:07:17 srv579909 kernel: raid6: using avx512x2 recovery algorithm
+Oct 08 23:07:17 srv579909 kernel: xor: automatically using best checksumming function   avx       
+Oct 08 23:07:17 srv579909 kernel: async_tx: api initialized (async)
+Oct 08 23:07:17 srv579909 kernel: Btrfs loaded, zoned=yes, fsverity=yes
+Oct 08 23:07:17 srv579909 kernel: EXT4-fs (sda1): mounted filesystem b2679cb7-040c-47fb-9459-f477977bb9de ro with ordered data mode. Quota mode: none.
+Oct 08 23:07:17 srv579909 systemd[1]: Inserted module 'autofs4'
+Oct 08 23:07:17 srv579909 systemd[1]: systemd 255.4-1ubuntu8.4 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Oct 08 23:07:17 srv579909 systemd[1]: Detected virtualization kvm.
+Oct 08 23:07:17 srv579909 systemd[1]: Detected architecture x86-64.
+Oct 08 23:07:17 srv579909 systemd[1]: Hostname set to <srv579909>.
+Oct 08 23:07:17 srv579909 systemd[1]: Configuration file /run/systemd/system/systemd-networkd-wait-online.service.d/10-netplan.conf is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 08 23:07:17 srv579909 systemd[1]: Configuration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Oct 08 23:07:17 srv579909 systemd[1]: Queued start job for default target graphical.target.
+Oct 08 23:07:17 srv579909 systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+Oct 08 23:07:17 srv579909 systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+Oct 08 23:07:17 srv579909 systemd[1]: Created slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+Oct 08 23:07:17 srv579909 systemd[1]: Created slice user.slice - User and Session Slice.
+Oct 08 23:07:17 srv579909 systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+Oct 08 23:07:17 srv579909 systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+Oct 08 23:07:17 srv579909 systemd[1]: Expecting device dev-disk-by\x2dlabel-BOOT.device - /dev/disk/by-label/BOOT...
+Oct 08 23:07:17 srv579909 systemd[1]: Expecting device dev-disk-by\x2dlabel-UEFI.device - /dev/disk/by-label/UEFI...
+Oct 08 23:07:17 srv579909 systemd[1]: Expecting device dev-ttyS0.device - /dev/ttyS0...
+Oct 08 23:07:17 srv579909 systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+Oct 08 23:07:17 srv579909 systemd[1]: Reached target slices.target - Slice Units.
+Oct 08 23:07:17 srv579909 systemd[1]: Reached target snapd.mounts-pre.target - Mounting snaps.
+Oct 08 23:07:17 srv579909 systemd[1]: Reached target snapd.mounts.target - Mounted snaps.
+Oct 08 23:07:17 srv579909 systemd[1]: Reached target swap.target - Swaps.
+Oct 08 23:07:17 srv579909 systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+Oct 08 23:07:17 srv579909 systemd[1]: Listening on dm-event.socket - Device-mapper event daemon FIFOs.
+Oct 08 23:07:17 srv579909 systemd[1]: Listening on lvm2-lvmpolld.socket - LVM2 poll daemon socket.
+Oct 08 23:07:17 srv579909 systemd[1]: Listening on multipathd.socket - multipathd control socket.
+Oct 08 23:07:17 srv579909 systemd[1]: Listening on syslog.socket - Syslog Socket.
+Oct 08 23:07:17 srv579909 systemd[1]: Listening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+Oct 08 23:07:17 srv579909 systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+Oct 08 23:07:17 srv579909 systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+Oct 08 23:07:17 srv579909 systemd[1]: Listening on systemd-journald.socket - Journal Socket.
+Oct 08 23:07:17 srv579909 systemd[1]: Listening on systemd-networkd.socket - Network Service Netlink Socket.
+Oct 08 23:07:17 srv579909 systemd[1]: systemd-pcrextend.socket - TPM2 PCR Extension (Varlink) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Oct 08 23:07:17 srv579909 systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+Oct 08 23:07:17 srv579909 systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+Oct 08 23:07:17 srv579909 systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+Oct 08 23:07:17 srv579909 systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+Oct 08 23:07:17 srv579909 systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+Oct 08 23:07:17 srv579909 systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+Oct 08 23:07:17 srv579909 systemd[1]: Starting systemd-journald.service - Journal Service...
+Oct 08 23:07:17 srv579909 systemd[1]: Starting keyboard-setup.service - Set the console keyboard layout...
+Oct 08 23:07:17 srv579909 systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+Oct 08 23:07:17 srv579909 systemd[1]: Starting lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+Oct 08 23:07:17 srv579909 systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+Oct 08 23:07:17 srv579909 systemd[1]: Starting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+Oct 08 23:07:17 srv579909 systemd-journald[327]: Collecting audit messages is disabled.
+Oct 08 23:07:17 srv579909 systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+Oct 08 23:07:17 srv579909 systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+Oct 08 23:07:17 srv579909 systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+Oct 08 23:07:17 srv579909 systemd[1]: Starting modprobe@loop.service - Load Kernel Module loop...
+Oct 08 23:07:17 srv579909 systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+Oct 08 23:07:17 srv579909 systemd[1]: systemd-fsck-root.service - File System Check on Root Device was skipped because of an unmet condition check (ConditionPathExists=!/run/initramfs/fsck-root).
+Oct 08 23:07:17 srv579909 systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+Oct 08 23:07:17 srv579909 systemd[1]: systemd-pcrmachine.service - TPM2 PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Oct 08 23:07:17 srv579909 systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+Oct 08 23:07:17 srv579909 systemd[1]: systemd-tpm2-setup-early.service - TPM2 SRK Setup (Early) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Oct 08 23:07:17 srv579909 systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+Oct 08 23:07:17 srv579909 systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+Oct 08 23:07:17 srv579909 systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+Oct 08 23:07:17 srv579909 systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.
+Oct 08 23:07:17 srv579909 systemd[1]: Mounted sys-kernel-tracing.mount - Kernel Trace File System.
+Oct 08 23:07:17 srv579909 systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+Oct 08 23:07:17 srv579909 kernel: EXT4-fs (sda1): re-mounted b2679cb7-040c-47fb-9459-f477977bb9de r/w. Quota mode: none.
+Oct 08 23:07:17 srv579909 systemd[1]: modprobe@configfs.service: Deactivated successfully.
+Oct 08 23:07:17 srv579909 systemd[1]: Finished modprobe@configfs.service - Load Kernel Module configfs.
+Oct 08 23:07:17 srv579909 systemd[1]: Started systemd-journald.service - Journal Service.
+Oct 08 23:07:17 srv579909 systemd-journald[327]: Received client request to flush runtime journal.
+Oct 08 23:07:17 srv579909 systemd-journald[327]: /var/log/journal/65d73cbc71b379cac4b549bd3ecc1c0b/system.journal: Journal file uses a different sequence number ID, rotating.
+Oct 08 23:07:17 srv579909 systemd-journald[327]: Rotating system journal.
+Oct 08 23:07:17 srv579909 kernel: virtio_net virtio2 eth0: renamed from ens18
+Oct 08 23:07:17 srv579909 kernel: kvm_amd: TSC scaling supported
+Oct 08 23:07:17 srv579909 kernel: kvm_amd: Nested Virtualization enabled
+Oct 08 23:07:17 srv579909 kernel: kvm_amd: Nested Paging enabled
+Oct 08 23:07:17 srv579909 kernel: kvm_amd: LBR virtualization supported
+Oct 08 23:07:17 srv579909 kernel: kvm_amd: Virtual VMLOAD VMSAVE supported
+Oct 08 23:07:17 srv579909 kernel: kvm_amd: Virtual GIF supported
+Oct 08 23:07:17 srv579909 kernel: kvm_amd: Virtual NMI enabled
+Oct 08 23:07:17 srv579909 kernel: EXT4-fs (sda16): mounted filesystem 9c6b3b5d-0247-404e-ac9c-39dd8b38829c r/w with ordered data mode. Quota mode: none.
+Oct 08 23:07:17 srv579909 kernel: audit: type=1400 audit(1728428837.752:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Discord" pid=532 comm="apparmor_parser"
+Oct 08 23:07:17 srv579909 kernel: audit: type=1400 audit(1728428837.752:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="1password" pid=531 comm="apparmor_parser"
+Oct 08 23:07:17 srv579909 kernel: audit: type=1400 audit(1728428837.753:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="QtWebEngineProcess" pid=534 comm="apparmor_parser"
+Oct 08 23:07:17 srv579909 kernel: audit: type=1400 audit(1728428837.754:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name=4D6F6E676F444220436F6D70617373 pid=533 comm="apparmor_parser"
+Oct 08 23:07:17 srv579909 kernel: audit: type=1400 audit(1728428837.755:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="balena-etcher" pid=537 comm="apparmor_parser"
+Oct 08 23:07:17 srv579909 kernel: audit: type=1400 audit(1728428837.755:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="buildah" pid=539 comm="apparmor_parser"
+Oct 08 23:07:17 srv579909 kernel: audit: type=1400 audit(1728428837.755:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="busybox" pid=540 comm="apparmor_parser"
+Oct 08 23:07:17 srv579909 kernel: audit: type=1400 audit(1728428837.756:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="brave" pid=538 comm="apparmor_parser"
+Oct 08 23:07:17 srv579909 kernel: audit: type=1400 audit(1728428837.758:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ch-checkns" pid=543 comm="apparmor_parser"
+Oct 08 23:07:18 srv579909 kernel: ISO 9660 Extensions: RRIP_1991A
+Oct 08 23:07:21 srv579909 kernel: kauditd_printk_skb: 110 callbacks suppressed
+Oct 08 23:07:21 srv579909 kernel: audit: type=1400 audit(1728428841.560:121): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=766 comm="apparmor_parser"
+Oct 08 23:07:21 srv579909 kernel: loop0: detected capacity change from 0 to 8
+Oct 08 23:07:21 srv579909 kernel: audit: type=1400 audit(1728428841.943:122): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=893 comm="apparmor_parser"
+Oct 08 23:07:21 srv579909 kernel: audit: type=1400 audit(1728428841.948:123): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=893 comm="apparmor_parser"
+Oct 08 23:07:22 srv579909 kernel: workqueue: page_reporting_process hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+Oct 08 23:07:33 srv579909 kernel: workqueue: page_reporting_process hogged CPU for >10000us 8 times, consider switching to WQ_UNBOUND
+Oct 08 23:09:42 srv579909 kernel: bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 1(veth5d6a537a) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 1(veth5d6a537a) entered disabled state
+Oct 08 23:09:42 srv579909 kernel: veth5d6a537a: entered allmulticast mode
+Oct 08 23:09:42 srv579909 kernel: veth5d6a537a: entered promiscuous mode
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 2(vethe192793b) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 2(vethe192793b) entered disabled state
+Oct 08 23:09:42 srv579909 kernel: vethe192793b: entered allmulticast mode
+Oct 08 23:09:42 srv579909 kernel: vethe192793b: entered promiscuous mode
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 2(vethe192793b) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 2(vethe192793b) entered forwarding state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 1(veth5d6a537a) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 1(veth5d6a537a) entered forwarding state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 3(veth14f3f48f) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 3(veth14f3f48f) entered disabled state
+Oct 08 23:09:42 srv579909 kernel: veth14f3f48f: entered allmulticast mode
+Oct 08 23:09:42 srv579909 kernel: veth14f3f48f: entered promiscuous mode
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 3(veth14f3f48f) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 3(veth14f3f48f) entered forwarding state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 4(vethfb13cc0c) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 4(vethfb13cc0c) entered disabled state
+Oct 08 23:09:42 srv579909 kernel: vethfb13cc0c: entered allmulticast mode
+Oct 08 23:09:42 srv579909 kernel: vethfb13cc0c: entered promiscuous mode
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 5(veth5eaf3a57) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 5(veth5eaf3a57) entered disabled state
+Oct 08 23:09:42 srv579909 kernel: veth5eaf3a57: entered allmulticast mode
+Oct 08 23:09:42 srv579909 kernel: veth5eaf3a57: entered promiscuous mode
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 4(vethfb13cc0c) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 4(vethfb13cc0c) entered forwarding state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 5(veth5eaf3a57) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 5(veth5eaf3a57) entered forwarding state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 6(veth264d3ac5) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 6(veth264d3ac5) entered disabled state
+Oct 08 23:09:42 srv579909 kernel: veth264d3ac5: entered allmulticast mode
+Oct 08 23:09:42 srv579909 kernel: veth264d3ac5: entered promiscuous mode
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 7(vethe0c58373) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 7(vethe0c58373) entered disabled state
+Oct 08 23:09:42 srv579909 kernel: vethe0c58373: entered allmulticast mode
+Oct 08 23:09:42 srv579909 kernel: vethe0c58373: entered promiscuous mode
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 8(veth92a240e7) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 8(veth92a240e7) entered disabled state
+Oct 08 23:09:42 srv579909 kernel: veth92a240e7: entered allmulticast mode
+Oct 08 23:09:42 srv579909 kernel: veth92a240e7: entered promiscuous mode
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 9(veth55799076) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 9(veth55799076) entered disabled state
+Oct 08 23:09:42 srv579909 kernel: veth55799076: entered allmulticast mode
+Oct 08 23:09:42 srv579909 kernel: veth55799076: entered promiscuous mode
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 6(veth264d3ac5) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 6(veth264d3ac5) entered forwarding state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 10(veth2b3ece98) entered blocking state
+Oct 08 23:09:42 srv579909 kernel: mynet0: port 10(veth2b3ece98) entered disabled state
+Oct 08 23:09:42 srv579909 kernel: veth2b3ece98: entered allmulticast mode
+Oct 08 23:09:42 srv579909 kernel: veth2b3ece98: entered promiscuous mode
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 11(vetha3c5718e) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 11(vetha3c5718e) entered disabled state
+Oct 08 23:09:43 srv579909 kernel: vetha3c5718e: entered allmulticast mode
+Oct 08 23:09:43 srv579909 kernel: vetha3c5718e: entered promiscuous mode
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 12(veth10bb2535) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 12(veth10bb2535) entered disabled state
+Oct 08 23:09:43 srv579909 kernel: veth10bb2535: entered allmulticast mode
+Oct 08 23:09:43 srv579909 kernel: veth10bb2535: entered promiscuous mode
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 13(veth35ea701f) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 13(veth35ea701f) entered disabled state
+Oct 08 23:09:43 srv579909 kernel: veth35ea701f: entered allmulticast mode
+Oct 08 23:09:43 srv579909 kernel: veth35ea701f: entered promiscuous mode
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 14(veth9f17752c) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 14(veth9f17752c) entered disabled state
+Oct 08 23:09:43 srv579909 kernel: veth9f17752c: entered allmulticast mode
+Oct 08 23:09:43 srv579909 kernel: veth9f17752c: entered promiscuous mode
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 7(vethe0c58373) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 7(vethe0c58373) entered forwarding state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 8(veth92a240e7) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 8(veth92a240e7) entered forwarding state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 15(vetha4eacac7) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 15(vetha4eacac7) entered disabled state
+Oct 08 23:09:43 srv579909 kernel: vetha4eacac7: entered allmulticast mode
+Oct 08 23:09:43 srv579909 kernel: vetha4eacac7: entered promiscuous mode
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 16(veth058343bd) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 16(veth058343bd) entered disabled state
+Oct 08 23:09:43 srv579909 kernel: veth058343bd: entered allmulticast mode
+Oct 08 23:09:43 srv579909 kernel: veth058343bd: entered promiscuous mode
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 10(veth2b3ece98) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 10(veth2b3ece98) entered forwarding state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 17(veth7a3242ce) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 17(veth7a3242ce) entered disabled state
+Oct 08 23:09:43 srv579909 kernel: veth7a3242ce: entered allmulticast mode
+Oct 08 23:09:43 srv579909 kernel: veth7a3242ce: entered promiscuous mode
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 12(veth10bb2535) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 12(veth10bb2535) entered forwarding state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 14(veth9f17752c) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 14(veth9f17752c) entered forwarding state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 13(veth35ea701f) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 13(veth35ea701f) entered forwarding state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 16(veth058343bd) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 16(veth058343bd) entered forwarding state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 15(vetha4eacac7) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 15(vetha4eacac7) entered forwarding state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 9(veth55799076) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 9(veth55799076) entered forwarding state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 18(veth06d12040) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 18(veth06d12040) entered disabled state
+Oct 08 23:09:43 srv579909 kernel: veth06d12040: entered allmulticast mode
+Oct 08 23:09:43 srv579909 kernel: veth06d12040: entered promiscuous mode
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 19(veth84af65c4) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 19(veth84af65c4) entered disabled state
+Oct 08 23:09:43 srv579909 kernel: veth84af65c4: entered allmulticast mode
+Oct 08 23:09:43 srv579909 kernel: veth84af65c4: entered promiscuous mode
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 11(vetha3c5718e) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 11(vetha3c5718e) entered forwarding state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 20(veth56cad11c) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 20(veth56cad11c) entered disabled state
+Oct 08 23:09:43 srv579909 kernel: veth56cad11c: entered allmulticast mode
+Oct 08 23:09:43 srv579909 kernel: veth56cad11c: entered promiscuous mode
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 18(veth06d12040) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 18(veth06d12040) entered forwarding state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 17(veth7a3242ce) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 17(veth7a3242ce) entered forwarding state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 19(veth84af65c4) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 19(veth84af65c4) entered forwarding state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 20(veth56cad11c) entered blocking state
+Oct 08 23:09:43 srv579909 kernel: mynet0: port 20(veth56cad11c) entered forwarding state
+Oct 08 23:09:43 srv579909 kernel: audit: type=1400 audit(1728428983.239:124): apparmor="STATUS" operation="profile_load" profile="unconfined" name="cri-containerd.apparmor.d" pid=3779 comm="apparmor_parser"
+Oct 08 23:09:43 srv579909 kernel: audit: type=1400 audit(1728428983.240:125): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="cri-containerd.apparmor.d" pid=3791 comm="apparmor_parser"
+Oct 08 23:09:43 srv579909 kernel: audit: type=1400 audit(1728428983.326:126): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="cri-containerd.apparmor.d" pid=3859 comm="apparmor_parser"
+Oct 08 23:09:43 srv579909 kernel: audit: type=1400 audit(1728428983.437:127): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="cri-containerd.apparmor.d" pid=3807 comm="apparmor_parser"
+Oct 08 23:09:43 srv579909 kernel: audit: type=1400 audit(1728428983.510:128): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="cri-containerd.apparmor.d" pid=3874 comm="apparmor_parser"
+Oct 08 23:09:45 srv579909 kernel: evm: overlay not supported
+Oct 08 23:09:46 srv579909 kernel: audit: type=1400 audit(1728428986.403:129): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=6733 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:09:46 srv579909 kernel: audit: type=1400 audit(1728428986.410:130): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=6739 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:09:46 srv579909 kernel: audit: type=1400 audit(1728428986.611:131): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=6745 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:09:46 srv579909 kernel: audit: type=1400 audit(1728428986.640:132): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=6756 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:09:46 srv579909 kernel: audit: type=1400 audit(1728428986.663:133): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=6781 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:09:46 srv579909 kernel: mynet0: port 9(veth55799076) entered disabled state
+Oct 08 23:09:46 srv579909 kernel: veth55799076 (unregistering): left allmulticast mode
+Oct 08 23:09:46 srv579909 kernel: veth55799076 (unregistering): left promiscuous mode
+Oct 08 23:09:46 srv579909 kernel: mynet0: port 9(veth55799076) entered disabled state
+Oct 08 23:09:46 srv579909 kernel: mynet0: port 2(vethe192793b) entered disabled state
+Oct 08 23:09:46 srv579909 kernel: vethe192793b (unregistering): left allmulticast mode
+Oct 08 23:09:46 srv579909 kernel: vethe192793b (unregistering): left promiscuous mode
+Oct 08 23:09:46 srv579909 kernel: mynet0: port 2(vethe192793b) entered disabled state
+Oct 08 23:09:48 srv579909 kernel: mynet0: port 2(vethfc632dd5) entered blocking state
+Oct 08 23:09:48 srv579909 kernel: mynet0: port 2(vethfc632dd5) entered disabled state
+Oct 08 23:09:48 srv579909 kernel: vethfc632dd5: entered allmulticast mode
+Oct 08 23:09:48 srv579909 kernel: vethfc632dd5: entered promiscuous mode
+Oct 08 23:09:48 srv579909 kernel: mynet0: port 2(vethfc632dd5) entered blocking state
+Oct 08 23:09:48 srv579909 kernel: mynet0: port 2(vethfc632dd5) entered forwarding state
+Oct 08 23:09:48 srv579909 kernel: mynet0: port 9(veth95144787) entered blocking state
+Oct 08 23:09:48 srv579909 kernel: mynet0: port 9(veth95144787) entered disabled state
+Oct 08 23:09:48 srv579909 kernel: veth95144787: entered allmulticast mode
+Oct 08 23:09:48 srv579909 kernel: veth95144787: entered promiscuous mode
+Oct 08 23:09:48 srv579909 kernel: mynet0: port 9(veth95144787) entered blocking state
+Oct 08 23:09:48 srv579909 kernel: mynet0: port 9(veth95144787) entered forwarding state
+Oct 08 23:09:52 srv579909 kernel: kauditd_printk_skb: 2 callbacks suppressed
+Oct 08 23:09:52 srv579909 kernel: audit: type=1400 audit(1728428992.783:136): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=8652 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:09:52 srv579909 kernel: audit: type=1400 audit(1728428992.834:137): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=8690 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:09:52 srv579909 kernel: audit: type=1400 audit(1728428992.856:138): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=8760 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:09:53 srv579909 kernel: audit: type=1400 audit(1728428993.817:139): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=9032 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:09:53 srv579909 kernel: audit: type=1400 audit(1728428993.947:140): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=9074 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:09:56 srv579909 kernel: audit: type=1400 audit(1728428996.510:141): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=9701 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:09:57 srv579909 kernel: mynet0: port 6(veth264d3ac5) entered disabled state
+Oct 08 23:09:57 srv579909 kernel: veth264d3ac5 (unregistering): left allmulticast mode
+Oct 08 23:09:57 srv579909 kernel: veth264d3ac5 (unregistering): left promiscuous mode
+Oct 08 23:09:57 srv579909 kernel: mynet0: port 6(veth264d3ac5) entered disabled state
+Oct 08 23:09:57 srv579909 kernel: mynet0: port 15(vetha4eacac7) entered disabled state
+Oct 08 23:09:57 srv579909 kernel: vetha4eacac7 (unregistering): left allmulticast mode
+Oct 08 23:09:57 srv579909 kernel: vetha4eacac7 (unregistering): left promiscuous mode
+Oct 08 23:09:57 srv579909 kernel: mynet0: port 15(vetha4eacac7) entered disabled state
+Oct 08 23:09:57 srv579909 kernel: audit: type=1400 audit(1728428997.993:142): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=9999 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:09:58 srv579909 kernel: audit: type=1400 audit(1728428998.001:143): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=10006 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:09:58 srv579909 kernel: mynet0: port 6(veth696767ff) entered blocking state
+Oct 08 23:09:58 srv579909 kernel: mynet0: port 6(veth696767ff) entered disabled state
+Oct 08 23:09:58 srv579909 kernel: veth696767ff: entered allmulticast mode
+Oct 08 23:09:58 srv579909 kernel: veth696767ff: entered promiscuous mode
+Oct 08 23:09:58 srv579909 kernel: mynet0: port 6(veth696767ff) entered blocking state
+Oct 08 23:09:58 srv579909 kernel: mynet0: port 6(veth696767ff) entered forwarding state
+Oct 08 23:09:58 srv579909 kernel: mynet0: port 15(veth8e6181a9) entered blocking state
+Oct 08 23:09:58 srv579909 kernel: mynet0: port 15(veth8e6181a9) entered disabled state
+Oct 08 23:09:58 srv579909 kernel: veth8e6181a9: entered allmulticast mode
+Oct 08 23:09:58 srv579909 kernel: veth8e6181a9: entered promiscuous mode
+Oct 08 23:09:58 srv579909 kernel: mynet0: port 15(veth8e6181a9) entered blocking state
+Oct 08 23:09:58 srv579909 kernel: mynet0: port 15(veth8e6181a9) entered forwarding state
+Oct 08 23:10:00 srv579909 kernel: mynet0: port 7(vethe0c58373) entered disabled state
+Oct 08 23:10:00 srv579909 kernel: vethe0c58373 (unregistering): left allmulticast mode
+Oct 08 23:10:00 srv579909 kernel: vethe0c58373 (unregistering): left promiscuous mode
+Oct 08 23:10:00 srv579909 kernel: mynet0: port 7(vethe0c58373) entered disabled state
+Oct 08 23:10:03 srv579909 kernel: mynet0: port 7(vethd491eca2) entered blocking state
+Oct 08 23:10:03 srv579909 kernel: mynet0: port 7(vethd491eca2) entered disabled state
+Oct 08 23:10:03 srv579909 kernel: vethd491eca2: entered allmulticast mode
+Oct 08 23:10:03 srv579909 kernel: vethd491eca2: entered promiscuous mode
+Oct 08 23:10:03 srv579909 kernel: mynet0: port 7(vethd491eca2) entered blocking state
+Oct 08 23:10:03 srv579909 kernel: mynet0: port 7(vethd491eca2) entered forwarding state
+Oct 08 23:10:03 srv579909 kernel: audit: type=1400 audit(1728429003.108:144): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=10804 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:03 srv579909 kernel: audit: type=1400 audit(1728429003.126:145): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=10811 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:04 srv579909 kernel: audit: type=1400 audit(1728429004.356:146): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=11097 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:04 srv579909 kernel: audit: type=1400 audit(1728429004.364:147): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=11104 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:04 srv579909 kernel: audit: type=1400 audit(1728429004.839:148): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=11206 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:04 srv579909 kernel: audit: type=1400 audit(1728429004.846:149): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=11212 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:04 srv579909 kernel: audit: type=1400 audit(1728429004.911:150): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=11218 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:04 srv579909 kernel: audit: type=1400 audit(1728429004.918:151): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=11224 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:15 srv579909 kernel: mynet0: port 15(veth8e6181a9) entered disabled state
+Oct 08 23:10:15 srv579909 kernel: veth8e6181a9 (unregistering): left allmulticast mode
+Oct 08 23:10:15 srv579909 kernel: veth8e6181a9 (unregistering): left promiscuous mode
+Oct 08 23:10:15 srv579909 kernel: mynet0: port 15(veth8e6181a9) entered disabled state
+Oct 08 23:10:15 srv579909 kernel: mynet0: port 7(vethd491eca2) entered disabled state
+Oct 08 23:10:15 srv579909 kernel: vethd491eca2 (unregistering): left allmulticast mode
+Oct 08 23:10:15 srv579909 kernel: vethd491eca2 (unregistering): left promiscuous mode
+Oct 08 23:10:15 srv579909 kernel: mynet0: port 7(vethd491eca2) entered disabled state
+Oct 08 23:10:15 srv579909 kernel: audit: type=1400 audit(1728429015.972:152): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=12420 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:17 srv579909 kernel: mynet0: port 7(veth680b7115) entered blocking state
+Oct 08 23:10:17 srv579909 kernel: mynet0: port 7(veth680b7115) entered disabled state
+Oct 08 23:10:17 srv579909 kernel: veth680b7115: entered allmulticast mode
+Oct 08 23:10:17 srv579909 kernel: veth680b7115: entered promiscuous mode
+Oct 08 23:10:17 srv579909 kernel: mynet0: port 7(veth680b7115) entered blocking state
+Oct 08 23:10:17 srv579909 kernel: mynet0: port 7(veth680b7115) entered forwarding state
+Oct 08 23:10:17 srv579909 kernel: mynet0: port 15(veth8b56211e) entered blocking state
+Oct 08 23:10:17 srv579909 kernel: mynet0: port 15(veth8b56211e) entered disabled state
+Oct 08 23:10:17 srv579909 kernel: veth8b56211e: entered allmulticast mode
+Oct 08 23:10:17 srv579909 kernel: veth8b56211e: entered promiscuous mode
+Oct 08 23:10:17 srv579909 kernel: mynet0: port 15(veth8b56211e) entered blocking state
+Oct 08 23:10:17 srv579909 kernel: mynet0: port 15(veth8b56211e) entered forwarding state
+Oct 08 23:10:19 srv579909 kernel: audit: type=1400 audit(1728429019.354:153): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=13180 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:19 srv579909 kernel: audit: type=1400 audit(1728429019.364:154): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=13192 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:21 srv579909 kernel: audit: type=1400 audit(1728429021.022:155): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=13365 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:21 srv579909 kernel: audit: type=1400 audit(1728429021.029:156): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=13371 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:22 srv579909 kernel: mynet0: port 15(veth8b56211e) entered disabled state
+Oct 08 23:10:22 srv579909 kernel: veth8b56211e (unregistering): left allmulticast mode
+Oct 08 23:10:22 srv579909 kernel: veth8b56211e (unregistering): left promiscuous mode
+Oct 08 23:10:22 srv579909 kernel: mynet0: port 15(veth8b56211e) entered disabled state
+Oct 08 23:10:22 srv579909 kernel: audit: type=1400 audit(1728429022.783:157): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=13619 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:22 srv579909 kernel: audit: type=1400 audit(1728429022.783:158): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=13618 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:22 srv579909 kernel: audit: type=1400 audit(1728429022.786:159): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=13630 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:22 srv579909 kernel: audit: type=1400 audit(1728429022.787:160): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=13631 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:22 srv579909 kernel: audit: type=1400 audit(1728429022.790:161): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=13635 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:22 srv579909 kernel: audit: type=1400 audit(1728429022.794:162): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=13647 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:22 srv579909 kernel: audit: type=1400 audit(1728429022.799:163): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=13654 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:22 srv579909 kernel: audit: type=1400 audit(1728429022.927:164): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=13669 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:23 srv579909 kernel: mynet0: port 15(veth33ca5235) entered blocking state
+Oct 08 23:10:23 srv579909 kernel: mynet0: port 15(veth33ca5235) entered disabled state
+Oct 08 23:10:23 srv579909 kernel: veth33ca5235: entered allmulticast mode
+Oct 08 23:10:23 srv579909 kernel: veth33ca5235: entered promiscuous mode
+Oct 08 23:10:23 srv579909 kernel: mynet0: port 15(veth33ca5235) entered blocking state
+Oct 08 23:10:23 srv579909 kernel: mynet0: port 15(veth33ca5235) entered forwarding state
+Oct 08 23:10:29 srv579909 kernel: kauditd_printk_skb: 4 callbacks suppressed
+Oct 08 23:10:29 srv579909 kernel: audit: type=1400 audit(1728429029.360:169): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=14397 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:29 srv579909 kernel: audit: type=1400 audit(1728429029.362:170): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=14398 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:29 srv579909 kernel: audit: type=1400 audit(1728429029.371:171): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=14409 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:29 srv579909 kernel: audit: type=1400 audit(1728429029.374:172): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=14413 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:34 srv579909 kernel: audit: type=1400 audit(1728429034.808:173): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=15027 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:35 srv579909 kernel: audit: type=1400 audit(1728429035.148:174): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=15039 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:35 srv579909 kernel: audit: type=1400 audit(1728429035.356:175): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=15064 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:35 srv579909 kernel: audit: type=1400 audit(1728429035.362:176): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=15070 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:35 srv579909 kernel: audit: type=1400 audit(1728429035.924:177): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=15118 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:35 srv579909 kernel: audit: type=1400 audit(1728429035.932:178): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=15124 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:38 srv579909 kernel: audit: type=1400 audit(1728429038.400:179): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=15418 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:41 srv579909 kernel: audit: type=1400 audit(1728429041.419:180): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=15744 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:41 srv579909 kernel: audit: type=1400 audit(1728429041.426:181): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=15760 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:45 srv579909 kernel: mynet0: port 18(veth06d12040) entered disabled state
+Oct 08 23:10:45 srv579909 kernel: veth06d12040 (unregistering): left allmulticast mode
+Oct 08 23:10:45 srv579909 kernel: veth06d12040 (unregistering): left promiscuous mode
+Oct 08 23:10:45 srv579909 kernel: mynet0: port 18(veth06d12040) entered disabled state
+Oct 08 23:10:45 srv579909 kernel: mynet0: port 3(veth14f3f48f) entered disabled state
+Oct 08 23:10:45 srv579909 kernel: veth14f3f48f (unregistering): left allmulticast mode
+Oct 08 23:10:45 srv579909 kernel: veth14f3f48f (unregistering): left promiscuous mode
+Oct 08 23:10:45 srv579909 kernel: mynet0: port 3(veth14f3f48f) entered disabled state
+Oct 08 23:10:45 srv579909 kernel: audit: type=1400 audit(1728429045.971:182): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=17001 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:45 srv579909 kernel: audit: type=1400 audit(1728429045.977:183): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=17015 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:45 srv579909 kernel: mynet0: port 10(veth2b3ece98) entered disabled state
+Oct 08 23:10:45 srv579909 kernel: veth2b3ece98 (unregistering): left allmulticast mode
+Oct 08 23:10:45 srv579909 kernel: veth2b3ece98 (unregistering): left promiscuous mode
+Oct 08 23:10:45 srv579909 kernel: mynet0: port 10(veth2b3ece98) entered disabled state
+Oct 08 23:10:47 srv579909 kernel: mynet0: port 6(veth696767ff) entered disabled state
+Oct 08 23:10:47 srv579909 kernel: veth696767ff (unregistering): left allmulticast mode
+Oct 08 23:10:47 srv579909 kernel: veth696767ff (unregistering): left promiscuous mode
+Oct 08 23:10:47 srv579909 kernel: mynet0: port 6(veth696767ff) entered disabled state
+Oct 08 23:10:48 srv579909 kernel: audit: type=1400 audit(1728429048.402:184): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=17279 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:48 srv579909 kernel: audit: type=1400 audit(1728429048.410:185): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=17285 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:48 srv579909 kernel: mynet0: port 3(vethfe4d0fdc) entered blocking state
+Oct 08 23:10:48 srv579909 kernel: mynet0: port 3(vethfe4d0fdc) entered disabled state
+Oct 08 23:10:48 srv579909 kernel: vethfe4d0fdc: entered allmulticast mode
+Oct 08 23:10:48 srv579909 kernel: vethfe4d0fdc: entered promiscuous mode
+Oct 08 23:10:48 srv579909 kernel: mynet0: port 3(vethfe4d0fdc) entered blocking state
+Oct 08 23:10:48 srv579909 kernel: mynet0: port 3(vethfe4d0fdc) entered forwarding state
+Oct 08 23:10:48 srv579909 kernel: mynet0: port 6(vethb8507a97) entered blocking state
+Oct 08 23:10:48 srv579909 kernel: mynet0: port 6(vethb8507a97) entered disabled state
+Oct 08 23:10:48 srv579909 kernel: vethb8507a97: entered allmulticast mode
+Oct 08 23:10:48 srv579909 kernel: vethb8507a97: entered promiscuous mode
+Oct 08 23:10:48 srv579909 kernel: mynet0: port 6(vethb8507a97) entered blocking state
+Oct 08 23:10:48 srv579909 kernel: mynet0: port 6(vethb8507a97) entered forwarding state
+Oct 08 23:10:50 srv579909 kernel: audit: type=1400 audit(1728429050.201:186): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=17623 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:50 srv579909 kernel: audit: type=1400 audit(1728429050.209:187): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=17629 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:50 srv579909 kernel: audit: type=1400 audit(1728429050.666:188): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=17681 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:10:50 srv579909 kernel: audit: type=1400 audit(1728429050.674:189): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=17688 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:52 srv579909 kernel: mynet0: port 4(vethfb13cc0c) entered disabled state
+Oct 08 23:10:52 srv579909 kernel: vethfb13cc0c (unregistering): left allmulticast mode
+Oct 08 23:10:52 srv579909 kernel: vethfb13cc0c (unregistering): left promiscuous mode
+Oct 08 23:10:52 srv579909 kernel: mynet0: port 4(vethfb13cc0c) entered disabled state
+Oct 08 23:10:52 srv579909 kernel: audit: type=1400 audit(1728429052.358:190): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=17873 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:52 srv579909 kernel: audit: type=1400 audit(1728429052.367:191): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=17879 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:54 srv579909 kernel: audit: type=1400 audit(1728429054.043:192): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=18011 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:56 srv579909 kernel: audit: type=1400 audit(1728429056.044:193): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=18125 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:10:56 srv579909 kernel: audit: type=1400 audit(1728429056.051:194): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=18131 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:06 srv579909 kernel: audit: type=1400 audit(1728429066.097:195): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=18676 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:06 srv579909 kernel: audit: type=1400 audit(1728429066.107:196): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=18682 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:06 srv579909 kernel: audit: type=1400 audit(1728429066.309:197): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=18688 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:11:06 srv579909 kernel: audit: type=1400 audit(1728429066.320:198): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=18694 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:07 srv579909 kernel: audit: type=1400 audit(1728429067.354:199): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=18752 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:07 srv579909 kernel: audit: type=1400 audit(1728429067.362:200): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=18758 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:11 srv579909 kernel: audit: type=1400 audit(1728429071.356:201): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=18984 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:11 srv579909 kernel: audit: type=1400 audit(1728429071.364:202): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=18990 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:14 srv579909 kernel: audit: type=1400 audit(1728429074.359:203): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=19138 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:14 srv579909 kernel: audit: type=1400 audit(1728429074.367:204): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=19144 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:15 srv579909 kernel: mynet0: port 2(vethfc632dd5) entered disabled state
+Oct 08 23:11:15 srv579909 kernel: vethfc632dd5 (unregistering): left allmulticast mode
+Oct 08 23:11:15 srv579909 kernel: vethfc632dd5 (unregistering): left promiscuous mode
+Oct 08 23:11:15 srv579909 kernel: mynet0: port 2(vethfc632dd5) entered disabled state
+Oct 08 23:11:18 srv579909 kernel: audit: type=1400 audit(1728429078.401:205): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=19446 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:20 srv579909 kernel: audit: type=1400 audit(1728429080.561:206): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=19536 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 08 23:11:20 srv579909 kernel: audit: type=1400 audit(1728429080.567:207): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=19542 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:21 srv579909 kernel: audit: type=1400 audit(1728429081.403:208): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=19589 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:23 srv579909 kernel: audit: type=1400 audit(1728429083.407:209): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=19689 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:23 srv579909 kernel: audit: type=1400 audit(1728429083.414:210): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=19695 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:24 srv579909 kernel: audit: type=1400 audit(1728429084.360:211): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=19951 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:24 srv579909 kernel: mynet0: port 19(veth84af65c4) entered disabled state
+Oct 08 23:11:24 srv579909 kernel: veth84af65c4 (unregistering): left allmulticast mode
+Oct 08 23:11:24 srv579909 kernel: veth84af65c4 (unregistering): left promiscuous mode
+Oct 08 23:11:24 srv579909 kernel: mynet0: port 19(veth84af65c4) entered disabled state
+Oct 08 23:11:24 srv579909 kernel: audit: type=1400 audit(1728429084.370:212): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=19970 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:24 srv579909 kernel: mynet0: port 16(veth058343bd) entered disabled state
+Oct 08 23:11:24 srv579909 kernel: veth058343bd (unregistering): left allmulticast mode
+Oct 08 23:11:24 srv579909 kernel: veth058343bd (unregistering): left promiscuous mode
+Oct 08 23:11:24 srv579909 kernel: mynet0: port 16(veth058343bd) entered disabled state
+Oct 08 23:11:25 srv579909 kernel: mynet0: port 5(veth5eaf3a57) entered disabled state
+Oct 08 23:11:25 srv579909 kernel: veth5eaf3a57 (unregistering): left allmulticast mode
+Oct 08 23:11:25 srv579909 kernel: veth5eaf3a57 (unregistering): left promiscuous mode
+Oct 08 23:11:25 srv579909 kernel: mynet0: port 5(veth5eaf3a57) entered disabled state
+Oct 08 23:11:25 srv579909 kernel: mynet0: port 7(veth680b7115) entered disabled state
+Oct 08 23:11:25 srv579909 kernel: veth680b7115 (unregistering): left allmulticast mode
+Oct 08 23:11:25 srv579909 kernel: veth680b7115 (unregistering): left promiscuous mode
+Oct 08 23:11:25 srv579909 kernel: mynet0: port 7(veth680b7115) entered disabled state
+Oct 08 23:11:26 srv579909 kernel: audit: type=1400 audit(1728429086.225:213): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20179 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:27 srv579909 kernel: audit: type=1400 audit(1728429087.359:214): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20220 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:28 srv579909 kernel: audit: type=1400 audit(1728429088.228:215): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20235 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:28 srv579909 kernel: audit: type=1400 audit(1728429088.236:216): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20241 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:29 srv579909 kernel: audit: type=1400 audit(1728429089.358:217): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20247 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:29 srv579909 kernel: audit: type=1400 audit(1728429089.366:218): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20253 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:31 srv579909 kernel: audit: type=1400 audit(1728429091.358:219): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20263 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:31 srv579909 kernel: audit: type=1400 audit(1728429091.368:220): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20276 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:34 srv579909 kernel: mynet0: port 14(veth9f17752c) entered disabled state
+Oct 08 23:11:34 srv579909 kernel: veth9f17752c (unregistering): left allmulticast mode
+Oct 08 23:11:34 srv579909 kernel: veth9f17752c (unregistering): left promiscuous mode
+Oct 08 23:11:34 srv579909 kernel: mynet0: port 14(veth9f17752c) entered disabled state
+Oct 08 23:11:36 srv579909 kernel: audit: type=1400 audit(1728429096.256:221): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20446 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:36 srv579909 kernel: audit: type=1400 audit(1728429096.263:222): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20452 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:39 srv579909 kernel: audit: type=1400 audit(1728429099.354:223): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20483 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:39 srv579909 kernel: audit: type=1400 audit(1728429099.361:224): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20489 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:55 srv579909 kernel: audit: type=1400 audit(1728429115.359:225): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20890 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:55 srv579909 kernel: audit: type=1400 audit(1728429115.367:226): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20896 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:56 srv579909 kernel: audit: type=1400 audit(1728429116.355:227): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20902 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:56 srv579909 kernel: audit: type=1400 audit(1728429116.362:228): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20908 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:57 srv579909 kernel: audit: type=1400 audit(1728429117.354:229): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20914 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:57 srv579909 kernel: audit: type=1400 audit(1728429117.360:230): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20920 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:11:58 srv579909 kernel: audit: type=1400 audit(1728429118.351:231): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20933 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:00 srv579909 kernel: audit: type=1400 audit(1728429120.351:232): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20942 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:00 srv579909 kernel: audit: type=1400 audit(1728429120.358:233): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20949 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:01 srv579909 kernel: audit: type=1400 audit(1728429121.408:234): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20955 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:03 srv579909 kernel: audit: type=1400 audit(1728429123.409:235): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=20961 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:04 srv579909 kernel: audit: type=1400 audit(1728429124.354:236): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21019 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:04 srv579909 kernel: audit: type=1400 audit(1728429124.362:237): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21025 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:06 srv579909 kernel: audit: type=1400 audit(1728429126.373:238): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21037 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:06 srv579909 kernel: audit: type=1400 audit(1728429126.381:239): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21043 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:11 srv579909 kernel: audit: type=1400 audit(1728429131.355:240): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21058 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:11 srv579909 kernel: audit: type=1400 audit(1728429131.360:241): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21064 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:11 srv579909 kernel: audit: type=1400 audit(1728429131.373:242): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21070 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:12 srv579909 kernel: audit: type=1400 audit(1728429132.354:243): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21076 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:12 srv579909 kernel: audit: type=1400 audit(1728429132.366:244): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21091 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:13 srv579909 kernel: audit: type=1400 audit(1728429133.357:245): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21125 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:13 srv579909 kernel: audit: type=1400 audit(1728429133.364:246): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21131 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:28 srv579909 kernel: audit: type=1400 audit(1728429148.354:247): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21213 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:28 srv579909 kernel: audit: type=1400 audit(1728429148.362:248): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21219 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:30 srv579909 kernel: audit: type=1400 audit(1728429150.432:249): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21234 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:32 srv579909 kernel: audit: type=1400 audit(1728429152.434:250): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21240 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:32 srv579909 kernel: audit: type=1400 audit(1728429152.442:251): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21246 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:33 srv579909 kernel: audit: type=1400 audit(1728429153.496:252): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21252 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:33 srv579909 kernel: audit: type=1400 audit(1728429153.503:253): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21258 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:36 srv579909 kernel: audit: type=1400 audit(1728429156.446:254): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21322 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:36 srv579909 kernel: audit: type=1400 audit(1728429156.456:255): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21328 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:37 srv579909 kernel: audit: type=1400 audit(1728429157.353:256): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21334 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:37 srv579909 kernel: audit: type=1400 audit(1728429157.361:257): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21340 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:41 srv579909 kernel: audit: type=1400 audit(1728429161.356:258): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21356 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:41 srv579909 kernel: audit: type=1400 audit(1728429161.365:259): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21363 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:42 srv579909 kernel: audit: type=1400 audit(1728429162.406:260): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21369 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:45 srv579909 kernel: audit: type=1400 audit(1728429165.354:261): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21434 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:45 srv579909 kernel: audit: type=1400 audit(1728429165.361:262): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21440 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:47 srv579909 kernel: audit: type=1400 audit(1728429167.355:263): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21446 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:47 srv579909 kernel: audit: type=1400 audit(1728429167.363:264): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21452 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:54 srv579909 kernel: audit: type=1400 audit(1728429174.277:265): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21468 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:54 srv579909 kernel: audit: type=1400 audit(1728429174.283:266): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21475 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:54 srv579909 kernel: audit: type=1400 audit(1728429174.354:267): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21496 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:54 srv579909 kernel: audit: type=1400 audit(1728429174.361:268): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21502 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:56 srv579909 kernel: audit: type=1400 audit(1728429176.353:269): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21508 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:58 srv579909 kernel: audit: type=1400 audit(1728429178.355:270): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21514 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:12:58 srv579909 kernel: audit: type=1400 audit(1728429178.363:271): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21520 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:00 srv579909 kernel: audit: type=1400 audit(1728429180.355:272): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21535 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:00 srv579909 kernel: audit: type=1400 audit(1728429180.362:273): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21541 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:02 srv579909 kernel: audit: type=1400 audit(1728429182.502:274): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21563 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:04 srv579909 kernel: audit: type=1400 audit(1728429184.506:275): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21585 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:04 srv579909 kernel: audit: type=1400 audit(1728429184.513:276): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21591 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:04 srv579909 kernel: audit: type=1400 audit(1728429184.559:277): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21597 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:04 srv579909 kernel: audit: type=1400 audit(1728429184.567:278): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21603 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:06 srv579909 kernel: audit: type=1400 audit(1728429186.509:279): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21646 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:06 srv579909 kernel: audit: type=1400 audit(1728429186.517:280): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21652 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:12 srv579909 kernel: audit: type=1400 audit(1728429192.573:281): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21673 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:12 srv579909 kernel: audit: type=1400 audit(1728429192.582:282): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21679 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:16 srv579909 kernel: audit: type=1400 audit(1728429196.357:283): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21743 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:16 srv579909 kernel: audit: type=1400 audit(1728429196.365:284): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21749 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:18 srv579909 kernel: audit: type=1400 audit(1728429198.355:285): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21755 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:18 srv579909 kernel: audit: type=1400 audit(1728429198.363:286): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21761 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:25 srv579909 kernel: audit: type=1400 audit(1728429205.356:287): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21803 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:25 srv579909 kernel: audit: type=1400 audit(1728429205.363:288): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21809 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:33 srv579909 kernel: audit: type=1400 audit(1728429213.355:289): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21825 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:33 srv579909 kernel: audit: type=1400 audit(1728429213.359:290): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21831 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:33 srv579909 kernel: audit: type=1400 audit(1728429213.363:291): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21837 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:33 srv579909 kernel: audit: type=1400 audit(1728429213.368:292): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21843 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:34 srv579909 kernel: audit: type=1400 audit(1728429214.578:293): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21864 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:35 srv579909 kernel: audit: type=1400 audit(1728429215.636:294): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21870 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:35 srv579909 kernel: audit: type=1400 audit(1728429215.642:295): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21876 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:36 srv579909 kernel: audit: type=1400 audit(1728429216.580:296): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21883 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:36 srv579909 kernel: audit: type=1400 audit(1728429216.583:297): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21889 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:36 srv579909 kernel: audit: type=1400 audit(1728429216.587:298): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21895 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:38 srv579909 kernel: kauditd_printk_skb: 2 callbacks suppressed
+Oct 08 23:13:38 srv579909 kernel: audit: type=1400 audit(1728429218.362:301): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21956 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:39 srv579909 kernel: audit: type=1400 audit(1728429219.356:302): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21962 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:41 srv579909 kernel: audit: type=1400 audit(1728429221.355:303): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21979 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:41 srv579909 kernel: audit: type=1400 audit(1728429221.363:304): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21986 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:43 srv579909 kernel: audit: type=1400 audit(1728429223.656:305): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21992 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:43 srv579909 kernel: audit: type=1400 audit(1728429223.665:306): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=21998 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:48 srv579909 kernel: audit: type=1400 audit(1728429228.355:307): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22077 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:13:48 srv579909 kernel: audit: type=1400 audit(1728429228.364:308): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22083 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:01 srv579909 kernel: audit: type=1400 audit(1728429241.355:309): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22122 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:01 srv579909 kernel: audit: type=1400 audit(1728429241.364:310): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22129 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:02 srv579909 kernel: audit: type=1400 audit(1728429242.355:311): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22137 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:02 srv579909 kernel: audit: type=1400 audit(1728429242.362:312): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22143 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:06 srv579909 kernel: audit: type=1400 audit(1728429246.655:313): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22166 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:06 srv579909 kernel: audit: type=1400 audit(1728429246.655:314): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22165 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:06 srv579909 kernel: audit: type=1400 audit(1728429246.662:315): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22177 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:06 srv579909 kernel: audit: type=1400 audit(1728429246.699:316): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22183 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:06 srv579909 kernel: audit: type=1400 audit(1728429246.706:317): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22189 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:07 srv579909 kernel: audit: type=1400 audit(1728429247.357:318): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22232 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:07 srv579909 kernel: audit: type=1400 audit(1728429247.365:319): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22238 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:08 srv579909 kernel: audit: type=1400 audit(1728429248.656:320): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22250 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:08 srv579909 kernel: audit: type=1400 audit(1728429248.663:321): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22256 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:14 srv579909 kernel: audit: type=1400 audit(1728429254.717:322): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22287 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:14 srv579909 kernel: audit: type=1400 audit(1728429254.725:323): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22293 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:16 srv579909 kernel: audit: type=1400 audit(1728429256.355:324): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22342 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:16 srv579909 kernel: audit: type=1400 audit(1728429256.361:325): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22348 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:17 srv579909 kernel: audit: type=1400 audit(1728429257.356:326): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22354 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:17 srv579909 kernel: audit: type=1400 audit(1728429257.363:327): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22360 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:21 srv579909 kernel: audit: type=1400 audit(1728429261.355:328): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22366 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:21 srv579909 kernel: audit: type=1400 audit(1728429261.362:329): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22372 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:26 srv579909 kernel: audit: type=1400 audit(1728429266.353:330): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22415 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:28 srv579909 kernel: audit: type=1400 audit(1728429268.354:331): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22421 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:28 srv579909 kernel: audit: type=1400 audit(1728429268.362:332): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22437 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:33 srv579909 kernel: audit: type=1400 audit(1728429273.354:333): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22459 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:33 srv579909 kernel: audit: type=1400 audit(1728429273.363:334): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22465 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:36 srv579909 kernel: audit: type=1400 audit(1728429276.725:335): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22487 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:36 srv579909 kernel: audit: type=1400 audit(1728429276.734:336): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22494 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:36 srv579909 kernel: audit: type=1400 audit(1728429276.771:337): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22500 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:36 srv579909 kernel: audit: type=1400 audit(1728429276.779:338): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22506 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:38 srv579909 kernel: audit: type=1400 audit(1728429278.728:339): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22549 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:40 srv579909 kernel: audit: type=1400 audit(1728429280.727:340): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22562 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:40 srv579909 kernel: audit: type=1400 audit(1728429280.734:341): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22568 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:44 srv579909 kernel: audit: type=1400 audit(1728429284.792:342): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22632 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:44 srv579909 kernel: audit: type=1400 audit(1728429284.800:343): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22638 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:44 srv579909 kernel: mynet0: port 12(veth10bb2535) entered disabled state
+Oct 08 23:14:44 srv579909 kernel: veth10bb2535 (unregistering): left allmulticast mode
+Oct 08 23:14:44 srv579909 kernel: veth10bb2535 (unregistering): left promiscuous mode
+Oct 08 23:14:44 srv579909 kernel: mynet0: port 12(veth10bb2535) entered disabled state
+Oct 08 23:14:45 srv579909 kernel: audit: type=1400 audit(1728429285.357:344): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22700 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:45 srv579909 kernel: audit: type=1400 audit(1728429285.364:345): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22706 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:50 srv579909 kernel: audit: type=1400 audit(1728429290.355:346): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22755 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:14:50 srv579909 kernel: audit: type=1400 audit(1728429290.363:347): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22761 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:00 srv579909 kernel: audit: type=1400 audit(1728429300.357:348): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22792 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:00 srv579909 kernel: audit: type=1400 audit(1728429300.368:349): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22798 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:05 srv579909 kernel: audit: type=1400 audit(1728429305.357:350): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22833 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:05 srv579909 kernel: audit: type=1400 audit(1728429305.366:351): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22839 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:06 srv579909 kernel: audit: type=1400 audit(1728429306.787:352): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22845 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:06 srv579909 kernel: audit: type=1400 audit(1728429306.794:353): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22851 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:07 srv579909 kernel: audit: type=1400 audit(1728429307.841:354): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22857 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:07 srv579909 kernel: audit: type=1400 audit(1728429307.850:355): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22863 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:10 srv579909 kernel: audit: type=1400 audit(1728429310.796:356): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22912 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:12 srv579909 kernel: audit: type=1400 audit(1728429312.354:357): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22918 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:12 srv579909 kernel: audit: type=1400 audit(1728429312.797:358): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22924 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:12 srv579909 kernel: audit: type=1400 audit(1728429312.806:359): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22931 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:14 srv579909 kernel: audit: type=1400 audit(1728429314.354:360): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22974 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:14 srv579909 kernel: audit: type=1400 audit(1728429314.363:361): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=22988 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:15 srv579909 kernel: audit: type=1400 audit(1728429315.808:362): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23003 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:15 srv579909 kernel: audit: type=1400 audit(1728429315.815:363): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23009 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:15 srv579909 kernel: audit: type=1400 audit(1728429315.856:364): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23015 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:15 srv579909 kernel: audit: type=1400 audit(1728429315.865:365): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23021 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:20 srv579909 kernel: audit: type=1400 audit(1728429320.822:366): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23071 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:20 srv579909 kernel: audit: type=1400 audit(1728429320.830:367): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23077 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:36 srv579909 kernel: audit: type=1400 audit(1728429336.864:368): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23146 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:36 srv579909 kernel: audit: type=1400 audit(1728429336.872:369): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23152 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:37 srv579909 kernel: audit: type=1400 audit(1728429337.921:370): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23158 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:37 srv579909 kernel: audit: type=1400 audit(1728429337.930:371): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23164 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:42 srv579909 kernel: audit: type=1400 audit(1728429342.873:372): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23248 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:44 srv579909 kernel: audit: type=1400 audit(1728429344.874:373): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23279 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:44 srv579909 kernel: audit: type=1400 audit(1728429344.879:374): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23285 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:44 srv579909 kernel: audit: type=1400 audit(1728429344.884:375): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23291 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:45 srv579909 kernel: audit: type=1400 audit(1728429345.880:376): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23297 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:45 srv579909 kernel: audit: type=1400 audit(1728429345.888:377): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23303 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:45 srv579909 kernel: audit: type=1400 audit(1728429345.941:378): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23309 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:45 srv579909 kernel: audit: type=1400 audit(1728429345.949:379): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23315 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:46 srv579909 kernel: audit: type=1400 audit(1728429346.354:380): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23321 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:46 srv579909 kernel: audit: type=1400 audit(1728429346.361:381): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23327 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:48 srv579909 kernel: kauditd_printk_skb: 2 callbacks suppressed
+Oct 08 23:15:48 srv579909 kernel: audit: type=1400 audit(1728429348.357:384): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23388 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:48 srv579909 kernel: audit: type=1400 audit(1728429348.365:385): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23394 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:50 srv579909 kernel: audit: type=1400 audit(1728429350.889:386): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23400 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:50 srv579909 kernel: audit: type=1400 audit(1728429350.896:387): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23406 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:54 srv579909 kernel: audit: type=1400 audit(1728429354.550:388): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23438 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:15:54 srv579909 kernel: audit: type=1400 audit(1728429354.559:389): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23444 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:06 srv579909 kernel: audit: type=1400 audit(1728429366.926:390): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23493 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:06 srv579909 kernel: audit: type=1400 audit(1728429366.934:391): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23499 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:08 srv579909 kernel: audit: type=1400 audit(1728429368.978:392): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23505 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:08 srv579909 kernel: audit: type=1400 audit(1728429368.985:393): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23511 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:14 srv579909 kernel: audit: type=1400 audit(1728429374.942:394): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23584 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:15 srv579909 kernel: audit: type=1400 audit(1728429375.944:395): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23590 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:15 srv579909 kernel: audit: type=1400 audit(1728429375.952:396): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23596 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:16 srv579909 kernel: audit: type=1400 audit(1728429376.943:397): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23602 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:16 srv579909 kernel: audit: type=1400 audit(1728429376.946:398): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23608 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:16 srv579909 kernel: audit: type=1400 audit(1728429376.950:399): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23614 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:17 srv579909 kernel: audit: type=1400 audit(1728429377.001:400): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23620 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:17 srv579909 kernel: audit: type=1400 audit(1728429377.010:401): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23626 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:18 srv579909 kernel: audit: type=1400 audit(1728429378.948:402): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23668 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:18 srv579909 kernel: audit: type=1400 audit(1728429378.956:403): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23674 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:20 srv579909 kernel: audit: type=1400 audit(1728429380.958:404): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23686 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:20 srv579909 kernel: audit: type=1400 audit(1728429380.966:405): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23692 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:32 srv579909 kernel: audit: type=1400 audit(1728429392.356:406): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23734 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:32 srv579909 kernel: audit: type=1400 audit(1728429392.363:407): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23740 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:33 srv579909 kernel: audit: type=1400 audit(1728429393.355:408): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23746 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:33 srv579909 kernel: audit: type=1400 audit(1728429393.363:409): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23752 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:36 srv579909 kernel: audit: type=1400 audit(1728429396.994:410): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23782 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:37 srv579909 kernel: audit: type=1400 audit(1728429397.001:411): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23788 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:40 srv579909 kernel: audit: type=1400 audit(1728429400.049:412): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23794 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 08 23:16:40 srv579909 kernel: audit: type=1400 audit(1728429400.055:413): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=23800 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 00:00:03 srv579909 kernel: workqueue: blk_mq_run_work_fn hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+Oct 09 04:15:16 srv579909 kernel: hrtimer: interrupt took 11048114 ns
+Oct 09 07:28:13 srv579909 kernel: mynet0: port 2(veth79eec60e) entered blocking state
+Oct 09 07:28:13 srv579909 kernel: mynet0: port 2(veth79eec60e) entered disabled state
+Oct 09 07:28:13 srv579909 kernel: veth79eec60e: entered allmulticast mode
+Oct 09 07:28:13 srv579909 kernel: veth79eec60e: entered promiscuous mode
+Oct 09 07:28:13 srv579909 kernel: mynet0: port 2(veth79eec60e) entered blocking state
+Oct 09 07:28:13 srv579909 kernel: mynet0: port 2(veth79eec60e) entered forwarding state
+Oct 09 07:28:14 srv579909 kernel: mynet0: port 15(veth33ca5235) entered disabled state
+Oct 09 07:28:14 srv579909 kernel: veth33ca5235 (unregistering): left allmulticast mode
+Oct 09 07:28:14 srv579909 kernel: veth33ca5235 (unregistering): left promiscuous mode
+Oct 09 07:28:14 srv579909 kernel: mynet0: port 15(veth33ca5235) entered disabled state
+Oct 09 07:28:14 srv579909 kernel: mynet0: port 1(veth5d6a537a) entered disabled state
+Oct 09 07:28:14 srv579909 kernel: veth5d6a537a (unregistering): left allmulticast mode
+Oct 09 07:28:14 srv579909 kernel: veth5d6a537a (unregistering): left promiscuous mode
+Oct 09 07:28:14 srv579909 kernel: mynet0: port 1(veth5d6a537a) entered disabled state
+Oct 09 07:28:14 srv579909 kernel: mynet0: port 17(veth7a3242ce) entered disabled state
+Oct 09 07:28:14 srv579909 kernel: veth7a3242ce (unregistering): left allmulticast mode
+Oct 09 07:28:14 srv579909 kernel: veth7a3242ce (unregistering): left promiscuous mode
+Oct 09 07:28:14 srv579909 kernel: mynet0: port 17(veth7a3242ce) entered disabled state
+Oct 09 07:28:14 srv579909 kernel: mynet0: port 3(vethfe4d0fdc) entered disabled state
+Oct 09 07:28:15 srv579909 kernel: vethfe4d0fdc (unregistering): left allmulticast mode
+Oct 09 07:28:15 srv579909 kernel: vethfe4d0fdc (unregistering): left promiscuous mode
+Oct 09 07:28:15 srv579909 kernel: mynet0: port 3(vethfe4d0fdc) entered disabled state
+Oct 09 07:28:15 srv579909 kernel: mynet0: port 20(veth56cad11c) entered disabled state
+Oct 09 07:28:15 srv579909 kernel: veth56cad11c (unregistering): left allmulticast mode
+Oct 09 07:28:15 srv579909 kernel: veth56cad11c (unregistering): left promiscuous mode
+Oct 09 07:28:15 srv579909 kernel: mynet0: port 20(veth56cad11c) entered disabled state
+Oct 09 07:28:15 srv579909 kernel: mynet0: port 8(veth92a240e7) entered disabled state
+Oct 09 07:28:15 srv579909 kernel: veth92a240e7 (unregistering): left allmulticast mode
+Oct 09 07:28:15 srv579909 kernel: veth92a240e7 (unregistering): left promiscuous mode
+Oct 09 07:28:15 srv579909 kernel: mynet0: port 8(veth92a240e7) entered disabled state
+Oct 09 07:28:15 srv579909 kernel: mynet0: port 11(vetha3c5718e) entered disabled state
+Oct 09 07:28:15 srv579909 kernel: vetha3c5718e (unregistering): left allmulticast mode
+Oct 09 07:28:15 srv579909 kernel: vetha3c5718e (unregistering): left promiscuous mode
+Oct 09 07:28:15 srv579909 kernel: mynet0: port 11(vetha3c5718e) entered disabled state
+Oct 09 07:28:15 srv579909 kernel: mynet0: port 9(veth95144787) entered disabled state
+Oct 09 07:28:15 srv579909 kernel: veth95144787 (unregistering): left allmulticast mode
+Oct 09 07:28:15 srv579909 kernel: veth95144787 (unregistering): left promiscuous mode
+Oct 09 07:28:15 srv579909 kernel: mynet0: port 9(veth95144787) entered disabled state
+Oct 09 07:28:15 srv579909 kernel: mynet0: port 6(vethb8507a97) entered disabled state
+Oct 09 07:28:15 srv579909 kernel: vethb8507a97 (unregistering): left allmulticast mode
+Oct 09 07:28:15 srv579909 kernel: vethb8507a97 (unregistering): left promiscuous mode
+Oct 09 07:28:15 srv579909 kernel: mynet0: port 6(vethb8507a97) entered disabled state
+Oct 09 07:28:15 srv579909 kernel: mynet0: port 13(veth35ea701f) entered disabled state
+Oct 09 07:28:15 srv579909 kernel: veth35ea701f (unregistering): left allmulticast mode
+Oct 09 07:28:15 srv579909 kernel: veth35ea701f (unregistering): left promiscuous mode
+Oct 09 07:28:15 srv579909 kernel: mynet0: port 13(veth35ea701f) entered disabled state
+Oct 09 07:28:23 srv579909 kernel: audit: type=1400 audit(1728458903.776:414): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=60677 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 07:28:52 srv579909 kernel: audit: type=1400 audit(1728458932.776:415): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=60723 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 07:28:52 srv579909 kernel: audit: type=1400 audit(1728458932.777:416): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=60722 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 07:28:52 srv579909 kernel: audit: type=1400 audit(1728458932.784:417): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=60734 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:29:15 srv579909 kernel: mynet0: port 2(veth79eec60e) entered disabled state
+Oct 09 07:29:15 srv579909 kernel: veth79eec60e (unregistering): left allmulticast mode
+Oct 09 07:29:15 srv579909 kernel: veth79eec60e (unregistering): left promiscuous mode
+Oct 09 07:29:15 srv579909 kernel: mynet0: port 2(veth79eec60e) entered disabled state
+Oct 09 07:34:15 srv579909 kernel: mynet0: port 1(vethf3a04575) entered blocking state
+Oct 09 07:34:15 srv579909 kernel: mynet0: port 1(vethf3a04575) entered disabled state
+Oct 09 07:34:15 srv579909 kernel: vethf3a04575: entered allmulticast mode
+Oct 09 07:34:15 srv579909 kernel: vethf3a04575: entered promiscuous mode
+Oct 09 07:34:15 srv579909 kernel: mynet0: port 1(vethf3a04575) entered blocking state
+Oct 09 07:34:15 srv579909 kernel: mynet0: port 1(vethf3a04575) entered forwarding state
+Oct 09 07:34:25 srv579909 kernel: audit: type=1400 audit(1728459265.601:418): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=63649 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 07:34:54 srv579909 kernel: audit: type=1400 audit(1728459294.604:419): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=63700 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 07:34:54 srv579909 kernel: audit: type=1400 audit(1728459294.616:420): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=63706 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 07:34:54 srv579909 kernel: audit: type=1400 audit(1728459294.623:421): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=63712 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:35:17 srv579909 kernel: mynet0: port 1(vethf3a04575) entered disabled state
+Oct 09 07:35:17 srv579909 kernel: vethf3a04575 (unregistering): left allmulticast mode
+Oct 09 07:35:17 srv579909 kernel: vethf3a04575 (unregistering): left promiscuous mode
+Oct 09 07:35:17 srv579909 kernel: mynet0: port 1(vethf3a04575) entered disabled state
+Oct 09 07:39:02 srv579909 kernel: workqueue: page_reporting_process hogged CPU for >10000us 16 times, consider switching to WQ_UNBOUND
+Oct 09 07:39:13 srv579909 kernel: mynet0: port 1(veth1fe1f43e) entered blocking state
+Oct 09 07:39:13 srv579909 kernel: mynet0: port 1(veth1fe1f43e) entered disabled state
+Oct 09 07:39:13 srv579909 kernel: veth1fe1f43e: entered allmulticast mode
+Oct 09 07:39:13 srv579909 kernel: veth1fe1f43e: entered promiscuous mode
+Oct 09 07:39:13 srv579909 kernel: mynet0: port 1(veth1fe1f43e) entered blocking state
+Oct 09 07:39:13 srv579909 kernel: mynet0: port 1(veth1fe1f43e) entered forwarding state
+Oct 09 07:39:23 srv579909 kernel: audit: type=1400 audit(1728459563.140:422): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=66252 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 07:39:52 srv579909 kernel: audit: type=1400 audit(1728459592.140:423): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=66298 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 07:39:52 srv579909 kernel: audit: type=1400 audit(1728459592.142:424): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=66299 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 07:39:52 srv579909 kernel: audit: type=1400 audit(1728459592.150:425): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=66310 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:40:15 srv579909 kernel: mynet0: port 1(veth1fe1f43e) entered disabled state
+Oct 09 07:40:15 srv579909 kernel: veth1fe1f43e (unregistering): left allmulticast mode
+Oct 09 07:40:15 srv579909 kernel: veth1fe1f43e (unregistering): left promiscuous mode
+Oct 09 07:40:15 srv579909 kernel: mynet0: port 1(veth1fe1f43e) entered disabled state
+Oct 09 07:55:28 srv579909 kernel: mynet0: port 1(veth6d959c04) entered blocking state
+Oct 09 07:55:28 srv579909 kernel: mynet0: port 1(veth6d959c04) entered disabled state
+Oct 09 07:55:28 srv579909 kernel: veth6d959c04: entered allmulticast mode
+Oct 09 07:55:28 srv579909 kernel: veth6d959c04: entered promiscuous mode
+Oct 09 07:55:28 srv579909 kernel: mynet0: port 1(veth6d959c04) entered blocking state
+Oct 09 07:55:28 srv579909 kernel: mynet0: port 1(veth6d959c04) entered forwarding state
+Oct 09 07:55:28 srv579909 kernel: mynet0: port 2(vethba6bc239) entered blocking state
+Oct 09 07:55:28 srv579909 kernel: mynet0: port 2(vethba6bc239) entered disabled state
+Oct 09 07:55:28 srv579909 kernel: vethba6bc239: entered allmulticast mode
+Oct 09 07:55:28 srv579909 kernel: vethba6bc239: entered promiscuous mode
+Oct 09 07:55:28 srv579909 kernel: mynet0: port 2(vethba6bc239) entered blocking state
+Oct 09 07:55:28 srv579909 kernel: mynet0: port 2(vethba6bc239) entered forwarding state
+Oct 09 07:55:30 srv579909 kernel: audit: type=1400 audit(1728460530.276:426): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73406 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 07:55:30 srv579909 kernel: audit: type=1400 audit(1728460530.283:427): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73412 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:56:00 srv579909 kernel: audit: type=1400 audit(1728460560.363:428): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73475 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 07:56:00 srv579909 kernel: audit: type=1400 audit(1728460560.373:429): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73481 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:56:13 srv579909 kernel: audit: type=1400 audit(1728460573.208:430): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73496 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:56:13 srv579909 kernel: audit: type=1400 audit(1728460573.214:431): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73502 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:56:46 srv579909 kernel: audit: type=1400 audit(1728460606.209:432): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73599 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:56:46 srv579909 kernel: audit: type=1400 audit(1728460606.218:433): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73605 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:56:57 srv579909 kernel: audit: type=1400 audit(1728460617.210:434): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73620 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:56:57 srv579909 kernel: audit: type=1400 audit(1728460617.219:435): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73626 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:57:32 srv579909 kernel: audit: type=1400 audit(1728460652.210:436): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73691 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:57:32 srv579909 kernel: audit: type=1400 audit(1728460652.218:437): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73697 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:57:40 srv579909 kernel: audit: type=1400 audit(1728460660.209:438): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73722 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:57:40 srv579909 kernel: audit: type=1400 audit(1728460660.219:439): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73728 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:58:18 srv579909 kernel: audit: type=1400 audit(1728460698.210:440): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73779 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:58:18 srv579909 kernel: audit: type=1400 audit(1728460698.217:441): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73785 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:58:22 srv579909 kernel: audit: type=1400 audit(1728460702.209:442): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73800 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 07:58:22 srv579909 kernel: audit: type=1400 audit(1728460702.217:443): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=73806 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 08:31:44 srv579909 kernel: mynet0: port 3(veth7f3d3615) entered blocking state
+Oct 09 08:31:44 srv579909 kernel: mynet0: port 3(veth7f3d3615) entered disabled state
+Oct 09 08:31:44 srv579909 kernel: veth7f3d3615: entered allmulticast mode
+Oct 09 08:31:44 srv579909 kernel: veth7f3d3615: entered promiscuous mode
+Oct 09 08:31:44 srv579909 kernel: mynet0: port 3(veth7f3d3615) entered blocking state
+Oct 09 08:31:44 srv579909 kernel: mynet0: port 3(veth7f3d3615) entered forwarding state
+Oct 09 08:31:46 srv579909 kernel: mynet0: port 1(veth6d959c04) entered disabled state
+Oct 09 08:31:46 srv579909 kernel: veth6d959c04 (unregistering): left allmulticast mode
+Oct 09 08:31:46 srv579909 kernel: veth6d959c04 (unregistering): left promiscuous mode
+Oct 09 08:31:46 srv579909 kernel: mynet0: port 1(veth6d959c04) entered disabled state
+Oct 09 08:31:46 srv579909 kernel: mynet0: port 2(vethba6bc239) entered disabled state
+Oct 09 08:31:46 srv579909 kernel: vethba6bc239 (unregistering): left allmulticast mode
+Oct 09 08:31:46 srv579909 kernel: vethba6bc239 (unregistering): left promiscuous mode
+Oct 09 08:31:46 srv579909 kernel: mynet0: port 2(vethba6bc239) entered disabled state
+Oct 09 08:31:51 srv579909 kernel: audit: type=1400 audit(1728462711.543:444): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=84337 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 08:31:51 srv579909 kernel: audit: type=1400 audit(1728462711.550:445): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=84343 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 08:32:34 srv579909 kernel: audit: type=1400 audit(1728462754.499:446): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=84402 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 08:32:34 srv579909 kernel: audit: type=1400 audit(1728462754.506:447): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=84408 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 08:37:19 srv579909 kernel: mynet0: port 1(veth0b6a83f9) entered blocking state
+Oct 09 08:37:19 srv579909 kernel: mynet0: port 1(veth0b6a83f9) entered disabled state
+Oct 09 08:37:19 srv579909 kernel: veth0b6a83f9: entered allmulticast mode
+Oct 09 08:37:19 srv579909 kernel: veth0b6a83f9: entered promiscuous mode
+Oct 09 08:37:19 srv579909 kernel: mynet0: port 1(veth0b6a83f9) entered blocking state
+Oct 09 08:37:19 srv579909 kernel: mynet0: port 1(veth0b6a83f9) entered forwarding state
+Oct 09 08:37:21 srv579909 kernel: mynet0: port 3(veth7f3d3615) entered disabled state
+Oct 09 08:37:21 srv579909 kernel: veth7f3d3615 (unregistering): left allmulticast mode
+Oct 09 08:37:21 srv579909 kernel: veth7f3d3615 (unregistering): left promiscuous mode
+Oct 09 08:37:21 srv579909 kernel: mynet0: port 3(veth7f3d3615) entered disabled state
+Oct 09 08:37:26 srv579909 kernel: audit: type=1400 audit(1728463046.819:448): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=86502 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 08:37:26 srv579909 kernel: audit: type=1400 audit(1728463046.825:449): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=86508 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 08:38:37 srv579909 kernel: audit: type=1400 audit(1728463117.777:450): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=86640 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 08:38:37 srv579909 kernel: audit: type=1400 audit(1728463117.785:451): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=86646 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 08:59:12 srv579909 kernel: mynet0: port 2(veth0538fe80) entered blocking state
+Oct 09 08:59:12 srv579909 kernel: mynet0: port 2(veth0538fe80) entered disabled state
+Oct 09 08:59:12 srv579909 kernel: veth0538fe80: entered allmulticast mode
+Oct 09 08:59:12 srv579909 kernel: veth0538fe80: entered promiscuous mode
+Oct 09 08:59:12 srv579909 kernel: mynet0: port 2(veth0538fe80) entered blocking state
+Oct 09 08:59:12 srv579909 kernel: mynet0: port 2(veth0538fe80) entered forwarding state
+Oct 09 08:59:13 srv579909 kernel: mynet0: port 1(veth0b6a83f9) entered disabled state
+Oct 09 08:59:13 srv579909 kernel: veth0b6a83f9 (unregistering): left allmulticast mode
+Oct 09 08:59:13 srv579909 kernel: veth0b6a83f9 (unregistering): left promiscuous mode
+Oct 09 08:59:13 srv579909 kernel: mynet0: port 1(veth0b6a83f9) entered disabled state
+Oct 09 08:59:19 srv579909 kernel: audit: type=1400 audit(1728464359.111:452): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=89901 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 08:59:19 srv579909 kernel: audit: type=1400 audit(1728464359.118:453): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=89907 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:00:03 srv579909 kernel: audit: type=1400 audit(1728464403.054:454): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=89989 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:00:03 srv579909 kernel: audit: type=1400 audit(1728464403.071:455): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=89994 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:09:20 srv579909 kernel: mynet0: port 1(vethe5403ecb) entered blocking state
+Oct 09 09:09:20 srv579909 kernel: mynet0: port 1(vethe5403ecb) entered disabled state
+Oct 09 09:09:20 srv579909 kernel: vethe5403ecb: entered allmulticast mode
+Oct 09 09:09:20 srv579909 kernel: vethe5403ecb: entered promiscuous mode
+Oct 09 09:09:20 srv579909 kernel: mynet0: port 1(vethe5403ecb) entered blocking state
+Oct 09 09:09:20 srv579909 kernel: mynet0: port 1(vethe5403ecb) entered forwarding state
+Oct 09 09:09:22 srv579909 kernel: mynet0: port 2(veth0538fe80) entered disabled state
+Oct 09 09:09:22 srv579909 kernel: veth0538fe80 (unregistering): left allmulticast mode
+Oct 09 09:09:22 srv579909 kernel: veth0538fe80 (unregistering): left promiscuous mode
+Oct 09 09:09:22 srv579909 kernel: mynet0: port 2(veth0538fe80) entered disabled state
+Oct 09 09:09:28 srv579909 kernel: audit: type=1400 audit(1728464968.020:456): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=92511 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 09:09:28 srv579909 kernel: audit: type=1400 audit(1728464968.030:457): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=92517 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:10:10 srv579909 kernel: audit: type=1400 audit(1728465010.971:458): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=92588 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:10:10 srv579909 kernel: audit: type=1400 audit(1728465010.979:459): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=92594 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:14:16 srv579909 kernel: mynet0: port 2(veth27e8bc25) entered blocking state
+Oct 09 09:14:16 srv579909 kernel: mynet0: port 2(veth27e8bc25) entered disabled state
+Oct 09 09:14:16 srv579909 kernel: veth27e8bc25: entered allmulticast mode
+Oct 09 09:14:16 srv579909 kernel: veth27e8bc25: entered promiscuous mode
+Oct 09 09:14:16 srv579909 kernel: mynet0: port 2(veth27e8bc25) entered blocking state
+Oct 09 09:14:16 srv579909 kernel: mynet0: port 2(veth27e8bc25) entered forwarding state
+Oct 09 09:14:17 srv579909 kernel: mynet0: port 1(vethe5403ecb) entered disabled state
+Oct 09 09:14:17 srv579909 kernel: vethe5403ecb (unregistering): left allmulticast mode
+Oct 09 09:14:17 srv579909 kernel: vethe5403ecb (unregistering): left promiscuous mode
+Oct 09 09:14:17 srv579909 kernel: mynet0: port 1(vethe5403ecb) entered disabled state
+Oct 09 09:14:23 srv579909 kernel: audit: type=1400 audit(1728465263.262:460): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=94600 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 09:14:23 srv579909 kernel: audit: type=1400 audit(1728465263.268:461): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=94606 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:15:07 srv579909 kernel: audit: type=1400 audit(1728465307.161:462): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=94689 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:15:07 srv579909 kernel: audit: type=1400 audit(1728465307.168:463): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=94695 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:23:04 srv579909 kernel: mynet0: port 1(veth9b438802) entered blocking state
+Oct 09 09:23:04 srv579909 kernel: mynet0: port 1(veth9b438802) entered disabled state
+Oct 09 09:23:04 srv579909 kernel: veth9b438802: entered allmulticast mode
+Oct 09 09:23:04 srv579909 kernel: veth9b438802: entered promiscuous mode
+Oct 09 09:23:04 srv579909 kernel: mynet0: port 1(veth9b438802) entered blocking state
+Oct 09 09:23:04 srv579909 kernel: mynet0: port 1(veth9b438802) entered forwarding state
+Oct 09 09:23:05 srv579909 kernel: mynet0: port 2(veth27e8bc25) entered disabled state
+Oct 09 09:23:05 srv579909 kernel: veth27e8bc25 (unregistering): left allmulticast mode
+Oct 09 09:23:05 srv579909 kernel: veth27e8bc25 (unregistering): left promiscuous mode
+Oct 09 09:23:05 srv579909 kernel: mynet0: port 2(veth27e8bc25) entered disabled state
+Oct 09 09:23:15 srv579909 kernel: audit: type=1400 audit(1728465795.467:464): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=99462 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 09:23:15 srv579909 kernel: audit: type=1400 audit(1728465795.474:465): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=99468 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:23:56 srv579909 kernel: audit: type=1400 audit(1728465836.435:466): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=99566 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:23:56 srv579909 kernel: audit: type=1400 audit(1728465836.442:467): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=99572 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:24:40 srv579909 kernel: audit: type=1400 audit(1728465880.434:468): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=99703 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:24:40 srv579909 kernel: audit: type=1400 audit(1728465880.442:469): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=99709 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:24:46 srv579909 kernel: mynet0: port 1(veth9b438802) entered disabled state
+Oct 09 09:24:46 srv579909 kernel: veth9b438802 (unregistering): left allmulticast mode
+Oct 09 09:24:46 srv579909 kernel: veth9b438802 (unregistering): left promiscuous mode
+Oct 09 09:24:46 srv579909 kernel: mynet0: port 1(veth9b438802) entered disabled state
+Oct 09 09:40:04 srv579909 kernel: mynet0: port 1(vethf8621c0c) entered blocking state
+Oct 09 09:40:04 srv579909 kernel: mynet0: port 1(vethf8621c0c) entered disabled state
+Oct 09 09:40:04 srv579909 kernel: vethf8621c0c: entered allmulticast mode
+Oct 09 09:40:04 srv579909 kernel: vethf8621c0c: entered promiscuous mode
+Oct 09 09:40:04 srv579909 kernel: mynet0: port 1(vethf8621c0c) entered blocking state
+Oct 09 09:40:04 srv579909 kernel: mynet0: port 1(vethf8621c0c) entered forwarding state
+Oct 09 09:40:23 srv579909 kernel: audit: type=1400 audit(1728466823.892:470): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=104152 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 09:40:23 srv579909 kernel: audit: type=1400 audit(1728466823.901:471): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=104158 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:41:07 srv579909 kernel: audit: type=1400 audit(1728466867.164:472): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=104289 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:41:07 srv579909 kernel: audit: type=1400 audit(1728466867.171:473): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=104296 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:41:44 srv579909 kernel: mynet0: port 1(vethf8621c0c) entered disabled state
+Oct 09 09:41:44 srv579909 kernel: vethf8621c0c (unregistering): left allmulticast mode
+Oct 09 09:41:44 srv579909 kernel: vethf8621c0c (unregistering): left promiscuous mode
+Oct 09 09:41:44 srv579909 kernel: mynet0: port 1(vethf8621c0c) entered disabled state
+Oct 09 09:44:24 srv579909 kernel: mynet0: port 1(veth8a34b3fc) entered blocking state
+Oct 09 09:44:24 srv579909 kernel: mynet0: port 1(veth8a34b3fc) entered disabled state
+Oct 09 09:44:24 srv579909 kernel: veth8a34b3fc: entered allmulticast mode
+Oct 09 09:44:24 srv579909 kernel: veth8a34b3fc: entered promiscuous mode
+Oct 09 09:44:24 srv579909 kernel: mynet0: port 1(veth8a34b3fc) entered blocking state
+Oct 09 09:44:24 srv579909 kernel: mynet0: port 1(veth8a34b3fc) entered forwarding state
+Oct 09 09:44:44 srv579909 kernel: audit: type=1400 audit(1728467084.764:474): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=106365 comm="runc" requested_mask="receive" denied_mask="receive" signal=term peer="runc"
+Oct 09 09:44:44 srv579909 kernel: audit: type=1400 audit(1728467084.771:475): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=106371 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:45:26 srv579909 kernel: audit: type=1400 audit(1728467126.936:476): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=106505 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:45:26 srv579909 kernel: audit: type=1400 audit(1728467126.945:477): apparmor="DENIED" operation="signal" class="signal" profile="cri-containerd.apparmor.d" pid=106511 comm="runc" requested_mask="receive" denied_mask="receive" signal=kill peer="runc"
+Oct 09 09:46:04 srv579909 kernel: mynet0: port 1(veth8a34b3fc) entered disabled state
+Oct 09 09:46:04 srv579909 kernel: veth8a34b3fc (unregistering): left allmulticast mode
+Oct 09 09:46:04 srv579909 kernel: veth8a34b3fc (unregistering): left promiscuous mode
+Oct 09 09:46:04 srv579909 kernel: mynet0: port 1(veth8a34b3fc) entered disabled state
